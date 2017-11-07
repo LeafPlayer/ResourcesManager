@@ -148,23 +148,6 @@ def run_parser
           end
           lang_value = values[1].gsub(/"/,'').gsub(/\n/,'').gsub(/;/,'')
           total_line += "\"#{readble_key}\" = \"#{lang_value}\";\n"
-          # raw_key_components = values[0].gsub(/"/, '').split(".")
-          # raw_key_components = raw_key_components.collect { |x|
-          #   raw_values = x.split("_")
-          #   raw_hyphen_values = x.split("-")
-          #   if raw_values.count >= 2
-          #     ret = raw_values.collect{ |r| r.capitalize }
-          #     ret.join("")
-          #   elsif raw_hyphen_values.count >= 2
-          #     ret = raw_hyphen_values.collect{ |r| r.capitalize }
-          #     ret.join("")
-          #   else
-          #     x.capitalize
-          #   end
-          # }
-          # raw_key = raw_key_components.join(".")
-          # puts raw_key
-          # total_line += "\"#{raw_key}\" = \"#{values[1]}"
         end#while
       end#File.open
 
@@ -179,10 +162,9 @@ run_parser
 
 Swift_generator = "LaurineGenerator.swift"
 input = "#{Output_folder}/zh-Hant.lproj/Localizable.strings"
-output_folder = "#{Parent_folder}/generated"
+output_folder = "#{Parent_folder}/Sources/generated"
 output = "#{output_folder}/I18N.swift"
-FileUtils.rm_rf output_folder
-FileUtils.mkdir output_folder
+FileUtils.mkdir_p output_folder
 base_class_name = "I18N"
 puts output
 system("#{Current_folder}/#{Swift_generator} -i #{input} -o #{output} -b #{base_class_name}")

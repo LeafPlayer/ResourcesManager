@@ -13,7 +13,6 @@ class ResourcesManagerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -23,20 +22,10 @@ class ResourcesManagerTests: XCTestCase {
     }
     
     func testExample() {
-        I18N.setToSystemDefaultLangauge()
-        print(I18N.currentLanguage)
-        print(I18N.MainMenu.BiggerSize)
+        print(ImageResource.mute)
+        print(ImageResource.chevronUp)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testSetToChinese() {
-//        I18N.userPreferredLanguage(.chineseTraditional)
-//        print(I18N.MainMenu.BiggerSize)
-//        I18N.userPreferredLanguage(.english)
-//        print(I18N.MainMenu.BiggerSize)
-        print(ImageResource.chevronUp)
-        print(ImageResource.play)
     }
     
     func testPerformanceExample() {

@@ -96,6 +96,46 @@ public extension I18N {
         currentLanguage = lang
     }
 }
-public struct ResourcesManager {
+
+public final class ImageResource {
+    private static var _imagePool: [String : NSImage] = [:]
     
+    static var bundle = Bundle(for: ImageResource.self)
+    
+    static func fileName(name: String) -> URL {
+        let prefixed = "Resources.bundle/images/"
+        let path = bundle.url(forResource: prefixed + name, withExtension: "pdf")
+        return path!
+    }
+    
+    static func image(named: String) -> NSImage {
+        if let image = _imagePool[named] { return image }
+        let desiredResolution: CGFloat = 72 * 3
+        let pdfURL = fileName(name: named)
+        guard let pdfData = try? Data(contentsOf: pdfURL), let pdfImageRep = NSPDFImageRep(data: pdfData) else { return NSImage() }
+        //First the desired size is created
+        let scaleFactor: CGFloat = desiredResolution/72.0 //default resolution for pdf is 72ppi
+        let size = NSMakeSize(pdfImageRep.size.width * scaleFactor, pdfImageRep.size.height * scaleFactor)
+        //destinationRect is the rectangle that I'll draw to; sourceRect indicates the portion of the imagerep that will be drawn
+        let sourceRect = NSMakeRect(0,0,pdfImageRep.size.width,pdfImageRep.size.height)
+        let destinationRect = NSMakeRect(0, 0, size.width, size.height)
+        
+        //idk why but this is needed (I think drawing is not possible without any istance of NSImage)
+        let image = NSImage(size: size)
+        image.lockFocus()
+        //drawing the image and converting it to png
+        pdfImageRep.draw(in: destinationRect, from: sourceRect, operation: .sourceOver, fraction: 1.0, respectFlipped: false, hints: [:])
+        let bitmap = NSBitmapImageRep(focusedViewRect: destinationRect)
+        guard let pngData = bitmap?.representation(using: .png, properties: [:]) else { return NSImage() }
+        guard let back = NSImage(data: pngData) else { return NSImage() }
+        _imagePool[named] = back
+        return back
+    }
+    
+    static func pngImage(named: String) -> NSImage {
+        let prefixed = "Resources.bundle/images/"
+        if let path = bundle.path(forResource: prefixed + named, ofType: "png"), let image = NSImage(contentsOfFile: path) { return image }
+        return NSImage()
+    }
 }
+

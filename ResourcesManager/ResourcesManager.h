@@ -6,7 +6,7 @@
 //  Copyright © 2017年 lincolnlaw. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 
 //! Project version number for ResourcesManager.
 FOUNDATION_EXPORT double ResourcesManagerVersionNumber;
