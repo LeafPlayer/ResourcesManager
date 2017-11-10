@@ -168,7 +168,7 @@ def do_generated
             puts ""
             # puts "not found #{line.gsub(/\n/,'')} in *.xib"
           else
-            total_i18n += "#{parser_line}\n"
+            total_i18n += "#{parser_line}\n".gsub(/IINA/,'Leaf')
           end
 
       end

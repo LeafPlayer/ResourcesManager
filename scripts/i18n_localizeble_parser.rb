@@ -108,7 +108,7 @@ def run_parser
       File.open(file, "r") do |infile|
         start_common = false
         while (line = infile.gets)
-          raw = line.gsub(/\n/,'')
+          raw = line.gsub(/\n/,'').gsub(/IINA/,'Leaf')
           if line.start_with?("/*") == true
             if raw.end_with?("*/") == true
               next
@@ -146,7 +146,7 @@ def run_parser
             puts "no readable key for #{raw_key} in #{name}"
             next
           end
-          lang_value = values[1].gsub(/"/,'').gsub(/\n/,'').gsub(/;/,'')
+          lang_value = values[1].gsub(/"/,'').gsub(/\n/,'').gsub(/;/,'').gsub(/IINA/, 'Leaf')
           total_line += "\"#{readble_key}\" = \"#{lang_value}\";\n"
         end#while
       end#File.open

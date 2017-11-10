@@ -316,14 +316,11 @@ public class I18N {
         /// Base translation: 將當前播放檔丢到垃圾桶
         public static var DeleteCurrentFile : String { return  "MainMenu.DeleteCurrentFile".localized }
 
-        /// Base translation: IINA
-        public static var IINA : String { return  "MainMenu.IINA".localized }
+        /// Base translation: 縮小
+        public static var SmallerSize : String { return  "MainMenu.SmallerSize".localized }
 
         /// Base translation: 清空菜單
         public static var ClearMenu : String { return  "MainMenu.ClearMenu".localized }
-
-        /// Base translation: 縮小
-        public static var SmallerSize : String { return  "MainMenu.SmallerSize".localized }
 
         /// Base translation: 音量 - 5%
         public static var VolumeMinusFivePercent : String { return  "MainMenu.VolumeMinusFivePercent".localized }
@@ -379,20 +376,26 @@ public class I18N {
         /// Base translation: 裁切
         public static var Crop : String { return  "MainMenu.Crop".localized }
 
+        /// Base translation: 將 Leaf 設爲預設APP…
+        public static var SetLeafAsTheDefaultApp : String { return  "MainMenu.SetLeafAsTheDefaultApp".localized }
+
         /// Base translation: 字幕延遲 + 0.5秒
         public static var SubtitleDelayPlusZeroPointFives : String { return  "MainMenu.SubtitleDelayPlusZeroPointFives".localized }
 
-        /// Base translation: 在新視窗中打開…
-        public static var OpenInNewWindow : String { return  "MainMenu.OpenInNewWindow".localized }
-
-        /// Base translation: 偏好設定...
-        public static var Preferences : String { return  "MainMenu.Preferences".localized }
+        /// Base translation: 關於 Leaf
+        public static var AboutLeaf : String { return  "MainMenu.AboutLeaf".localized }
 
         /// Base translation: 顯示全部
         public static var ShowAll : String { return  "MainMenu.ShowAll".localized }
 
         /// Base translation: 列表循環
         public static var PlaylistLoop : String { return  "MainMenu.PlaylistLoop".localized }
+
+        /// Base translation: 在新視窗中打開…
+        public static var OpenInNewWindow : String { return  "MainMenu.OpenInNewWindow".localized }
+
+        /// Base translation: 偏好設定...
+        public static var Preferences : String { return  "MainMenu.Preferences".localized }
 
         /// Base translation: 停止並清空播放列表
         public static var StopAndClearPlaylists : String { return  "MainMenu.StopAndClearPlaylists".localized }
@@ -405,9 +408,6 @@ public class I18N {
 
         /// Base translation: 播放
         public static var Playback : String { return  "MainMenu.Playback".localized }
-
-        /// Base translation: 隱藏 IINA
-        public static var HideIINA : String { return  "MainMenu.HideIINA".localized }
 
         /// Base translation: 音量:
         public static var Volume : String { return  "MainMenu.Volume".localized }
@@ -466,6 +466,9 @@ public class I18N {
         /// Base translation: 音訊延遲 - 0.5秒
         public static var AudioDelayMinusZeroPointFives : String { return  "MainMenu.AudioDelayMinusZeroPointFives".localized }
 
+        /// Base translation: 退出 Leaf
+        public static var QuitLeaf : String { return  "MainMenu.QuitLeaf".localized }
+
         /// Base translation: 縮到最小
         public static var Minimize : String { return  "MainMenu.Minimize".localized }
 
@@ -499,6 +502,9 @@ public class I18N {
         /// Base translation: 視窗置頂
         public static var FloatOnTop : String { return  "MainMenu.FloatOnTop".localized }
 
+        /// Base translation: Leaf 幫助
+        public static var LeafHelp : String { return  "MainMenu.LeafHelp".localized }
+
         /// Base translation: 音訊
         public static var Audio : String { return  "MainMenu.Audio".localized }
 
@@ -523,8 +529,8 @@ public class I18N {
         /// Base translation: 一半大小
         public static var HalfSize : String { return  "MainMenu.HalfSize".localized }
 
-        /// Base translation: IINA 幫助
-        public static var IINAHelp : String { return  "MainMenu.IINAHelp".localized }
+        /// Base translation: Leaf
+        public static var Leaf : String { return  "MainMenu.Leaf".localized }
 
         /// Base translation: 放大
         public static var ScaleUp : String { return  "MainMenu.ScaleUp".localized }
@@ -559,11 +565,11 @@ public class I18N {
         /// Base translation: 快速設定
         public static var ShowQuickSettingsPanel : String { return  "MainMenu.ShowQuickSettingsPanel".localized }
 
+        /// Base translation: 隱藏 Leaf
+        public static var HideLeaf : String { return  "MainMenu.HideLeaf".localized }
+
         /// Base translation: 隱藏其他
         public static var HideOthers : String { return  "MainMenu.HideOthers".localized }
-
-        /// Base translation: 將 IINA 設爲預設APP…
-        public static var SetIINAAsTheDefaultApp : String { return  "MainMenu.SetIINAAsTheDefaultApp".localized }
 
         /// Base translation: 抗交錯
         public static var Deinterlace : String { return  "MainMenu.Deinterlace".localized }
@@ -579,12 +585,6 @@ public class I18N {
 
         /// Base translation: 關閉
         public static var Close : String { return  "MainMenu.Close".localized }
-
-        /// Base translation: 退出 IINA
-        public static var QuitIINA : String { return  "MainMenu.QuitIINA".localized }
-
-        /// Base translation: 關於 IINA
-        public static var AboutIINA : String { return  "MainMenu.AboutIINA".localized }
 
         /// Base translation: 豎直翻轉
         public static var VerticalFlip : String { return  "MainMenu.VerticalFlip".localized }
@@ -729,14 +729,14 @@ public class I18N {
         /// Base translation: 暫存區大小 (KB):
         public static var CacheBufferSizeKB : String { return  "PrefNetwork.CacheBufferSizeKB".localized }
 
-        /// Base translation: 需重啟 IINA 後生效
-        public static var RequiresRestartingIINAToTakeEffectPoint : String { return  "PrefNetwork.RequiresRestartingIINAToTakeEffectPoint".localized }
-
         /// Base translation: 參數:
         public static var RawOptions : String { return  "PrefNetwork.RawOptions".localized }
 
         /// Base translation: HTTP
         public static var HTTP : String { return  "PrefNetwork.HTTP".localized }
+
+        /// Base translation: 需重啟 Leaf 後生效
+        public static var RequiresRestartingLeafToTakeEffectPoint : String { return  "PrefNetwork.RequiresRestartingLeafToTakeEffectPoint".localized }
 
         /// Base translation: 網路:
         public static var Network : String { return  "PrefNetwork.Network".localized }
@@ -752,6 +752,9 @@ public class I18N {
 
         /// Base translation: 自動
         public static var Auto : String { return  "PrefNetwork.Auto".localized }
+
+        /// Base translation: Leaf 將在此檔案夾內搜尋 youtube-dl，需重啟
+        public static var LeafWillSearchYoutubeDlInThisFolderPointRestartNeededPoint : String { return  "PrefNetwork.LeafWillSearchYoutubeDlInThisFolderPointRestartNeededPoint".localized }
 
         /// Base translation: 格式: <key>=<value>[,<key>=<value>[,…]]
         public static var Format_key_Value_Key_Value___ : String { return  "PrefNetwork.Format<key=Value[Key=Value[]]".localized }
@@ -773,9 +776,6 @@ public class I18N {
 
         /// Base translation: 啟用 youtube-dl
         public static var EnableYoutubeDl : String { return  "PrefNetwork.EnableYoutubeDl".localized }
-
-        /// Base translation: IINA 將在此檔案夾內搜尋 youtube-dl，需重啟
-        public static var IINAWillSearchYoutubeDlInThisFolderPointRestartNeededPoint : String { return  "PrefNetwork.IINAWillSearchYoutubeDlInThisFolderPointRestartNeededPoint".localized }
 
         /// Base translation: 暫存:
         public static var Cache : String { return  "PrefNetwork.Cache".localized }
@@ -1199,26 +1199,26 @@ public class I18N {
         /// Base translation: 半淺色
         public static var MediumLight : String { return  "PrefGeneral.MediumLight".localized }
 
-        /// Base translation: 需重啟 IINA 方可生效
-        public static var RequiresRestartingIINAToTakeEffectPoint : String { return  "PrefGeneral.RequiresRestartingIINAToTakeEffectPoint".localized }
-
         /// Base translation: 播放完畢後保持視窗打開
         public static var KeepWindowOpenAfterPlaybackFinishes : String { return  "PrefGeneral.KeepWindowOpenAfterPlaybackFinishes".localized }
 
         /// Base translation: 記錄:
         public static var History : String { return  "PrefGeneral.History".localized }
 
-        /// Base translation: 顯示歡迎視窗
-        public static var ShowWelcomeWindow : String { return  "PrefGeneral.ShowWelcomeWindow".localized }
+        /// Base translation: 需重啟 Leaf 方可生效
+        public static var RequiresRestartingLeafToTakeEffectPoint : String { return  "PrefGeneral.RequiresRestartingLeafToTakeEffectPoint".localized }
 
         /// Base translation: 啟用播放記錄
         public static var EnablePlaybackHistory : String { return  "PrefGeneral.EnablePlaybackHistory".localized }
 
-        /// Base translation: 暫停
-        public static var Pause : String { return  "PrefGeneral.Pause".localized }
+        /// Base translation: 顯示歡迎視窗
+        public static var ShowWelcomeWindow : String { return  "PrefGeneral.ShowWelcomeWindow".localized }
 
         /// Base translation: 總是在新視窗開啟檔案
         public static var AlwaysOpenMediaInNewWindow : String { return  "PrefGeneral.AlwaysOpenMediaInNewWindow".localized }
+
+        /// Base translation: 暫停
+        public static var Pause : String { return  "PrefGeneral.Pause".localized }
 
         /// Base translation: 無
         public static var DoNothing : String { return  "PrefGeneral.DoNothing".localized }
@@ -1293,8 +1293,8 @@ public class I18N {
 
     public class About {
 
-        /// Base translation: IINA
-        public static var IINA : String { return  "About.IINA".localized }
+        /// Base translation: Leaf
+        public static var Leaf : String { return  "About.Leaf".localized }
 
         /// Base translation: 0.0.1
         public static var ZeroPointZeroPointOne : String { return  "About.ZeroPointZeroPointOne".localized }
@@ -1371,9 +1371,6 @@ public class I18N {
 
     public class PrefSub {
 
-        /// Base translation: 由 IINA 智能選擇
-        public static var DetectIntelligentlyByIINA : String { return  "PrefSub.DetectIntelligentlyByIINA".localized }
-
         /// Base translation: 全熒幕時在方框內顯示字幕
         public static var DisplaySubtitlesInLetterboxesWhileInFullScreen : String { return  "PrefSub.DisplaySubtitlesInLetterboxesWhileInFullScreen".localized }
 
@@ -1397,6 +1394,9 @@ public class I18N {
 
         /// Base translation: 根據窗體大小自動調整字幕
         public static var ScaleSubtitlesWithWindowSize : String { return  "PrefSub.ScaleSubtitlesWithWindowSize".localized }
+
+        /// Base translation: 由 Leaf 智能選擇
+        public static var DetectIntelligentlyByLeaf : String { return  "PrefSub.DetectIntelligentlyByLeaf".localized }
 
         /// Base translation: 中間
         public static var Center : String { return  "PrefSub.Center".localized }
@@ -1523,11 +1523,11 @@ public class I18N {
         /// Base translation: ⇧⌘O
         public static var __O : String { return  "Initial.⇧⌘O".localized }
 
-        /// Base translation: IINA
-        public static var IINA : String { return  "Initial.IINA".localized }
-
         /// Base translation: 打開 URL…
         public static var OpenURL : String { return  "Initial.OpenURL".localized }
+
+        /// Base translation: Leaf
+        public static var Leaf : String { return  "Initial.Leaf".localized }
 
         /// Base translation: Table View Cell
         public static var TableViewCell : String { return  "Initial.TableViewCell".localized }
@@ -1967,7 +1967,7 @@ public class I18N {
         public static var TextCell : String { return  "PrefAdvanced.TextCell".localized }
 
         /// Base translation: 以下所有設定需重啟程式方可生效。
-        public static var TheFollowingSettingsWillRequireRestartingIINAToTakeEffectPoint : String { return  "PrefAdvanced.TheFollowingSettingsWillRequireRestartingIINAToTakeEffectPoint".localized }
+        public static var TheFollowingSettingsWillRequireRestartingLeafToTakeEffectPoint : String { return  "PrefAdvanced.TheFollowingSettingsWillRequireRestartingLeafToTakeEffectPoint".localized }
 
         /// Base translation: 值
         public static var Value : String { return  "PrefAdvanced.Value".localized }
