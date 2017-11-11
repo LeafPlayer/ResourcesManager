@@ -1,6 +1,7 @@
 #!/usr/local/bin/ruby
 require "fileutils"
 require_relative 'readble_map_fixed.rb'
+require_relative 'readable_add.rb'
 
 # Readable_i18n_key_map
 current_folder = `pwd`.chomp
@@ -18,6 +19,9 @@ Language_list = ["zh-Hans", "zh-Hant", "uk", "tr", "ru", "pl", "nl", "ko", "ja",
 Map_for_string_file = {"MainMenu.strings"=> "MainMenu", "PrefControlViewController.strings"=> "Pref", "InspectorWindowController.strings"=> "Inspector", "QuickSettingViewController.strings"=> "QuickSetting", "SubSelectWindowController.strings"=> "SubSelect", "HistoryWindowController.strings"=> "History", "FreeSelectingViewController.strings"=> "FreeSelecting", "CropSettingsViewController.strings"=> "CropSettings", "PlaylistViewController.strings"=> "Playlist", "FilterWindowController.strings"=> "Filter", "OpenURLAccessoryViewController.strings"=> "OpenURLAccessory", "AboutWindowController.strings"=> "About", "PrefGeneralViewController.strings"=> "PrefGeneral", "PrefKeyBindingViewController.strings"=> "PrefKeyBinding", "InitialWindowController.strings"=> "Initial", "PrefUIViewController.strings"=> "PrefUI", "PrefNetworkViewController.strings"=> "PrefNetwork", "FontPickerWindowController.strings"=> "FontPicker", "KeyRecordViewController.strings"=> "KeyRecord", "PrefAdvancedViewController.strings"=> "PrefAdvanced", "MainWindowController.strings"=> "Main", "PrefCodecViewController.strings"=> "PrefCodec", "PrefSubViewController.strings"=> "PrefSub", }
 
 def run_parser
+  # manual add key value
+  additional_keys = Readable_add_map["keys"]
+
   Language_list.each do |lang|
     current = "#{Resource_folder}/#{lang}.lproj"
     output_lang_foder = "#{Output_folder}/#{lang}.lproj"
@@ -44,6 +48,15 @@ def run_parser
     total_line = preface
     old_file = "#{current}/#{Localizable_strings_file}"
 
+    # adding new key value
+    total_line += "// Manual add new value\n"
+    additional_keys.each do |add_key|
+      add_value = value_for_adding_key_in_lang(lang, add_key)
+      total_line += "\"#{add_key}\" = \"#{add_value}\";\n"
+    end
+
+    total_line += "// Old Localizable file values\n"
+# add old file
     File.open(old_file, "r") do |infile|
       start_common = false
       while (line = infile.gets)
@@ -93,9 +106,9 @@ def run_parser
         # puts raw_key
         total_line += "\"#{raw_key}\" = \"#{values[1]}"
       end#while
-
     end#File.open
 
+    total_line += "// Localizable from nib files\n"
     files = Dir["#{current}/*.strings"]
     files.each do |file|
 
@@ -150,8 +163,8 @@ def run_parser
           total_line += "\"#{readble_key}\" = \"#{lang_value}\";\n"
         end#while
       end#File.open
+    end#files.each
 
-    end
     open(output_file, 'w') { |f|
       f.puts total_line
     }

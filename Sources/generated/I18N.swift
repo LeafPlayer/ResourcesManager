@@ -439,6 +439,9 @@ public class I18N {
         /// Base translation: 符合熒幕大小
         public static var FitToScreen : String { return  "MainMenu.FitToScreen".localized }
 
+        /// Base translation: 全部縮到最小
+        public static var MinimizeAll : String { return  "MainMenu.MinimizeAll".localized }
+
         /// Base translation: 重置字幕縮放
         public static var ResetSubtitleScale : String { return  "MainMenu.ResetSubtitleScale".localized }
 
