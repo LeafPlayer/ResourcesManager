@@ -30,6 +30,9 @@ public class I18N {
     /// Bundle for transilation
     public static var bundle: Bundle = Bundle(for: I18N.self)
 
+    /// Base translation: Github
+    public static var Github : String { return  "Github".localized }
+
 
     public class SubSelect {
 
