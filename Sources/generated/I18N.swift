@@ -30,149 +30,149 @@ public class I18N {
     /// Bundle for transilation
     public static var bundle: Bundle = Bundle(for: I18N.self)
 
-    /// Base translation: Github
-    public static var Github : String { return  "Github".localized }
-
 
     public class SubSelect {
 
-        /// Base translation: 下載已選中字幕
+        /// Base translation: 下载选中的字幕
         public static var DownloadSelectedSubtitles : String { return  "SubSelect.DownloadSelectedSubtitles".localized }
 
-        /// Base translation: 名字
-        public static var Name : String { return  "SubSelect.Name".localized }
+        /// Base translation: Text Cell
+        public static var TextCell : String { return  "SubSelect.TextCell".localized }
 
-        /// Base translation: 選擇字幕
+        /// Base translation: 选择字幕
         public static var Window : String { return  "SubSelect.Window".localized }
 
-        /// Base translation: 語言
+        /// Base translation: 文件名
+        public static var Name : String { return  "SubSelect.Name".localized }
+
+        /// Base translation: 语言
         public static var Language : String { return  "SubSelect.Language".localized }
 
-        /// Base translation: 下載
+        /// Base translation: 下载数
         public static var Downloads : String { return  "SubSelect.Downloads".localized }
 
     }
 
     public class FontPicker {
 
-        /// Base translation: 字體集
-        public static var Family : String { return  "FontPicker.Family".localized }
+        /// Base translation: 字体
+        public static var Typeface : String { return  "FontPicker.Typeface".localized }
 
-        /// Base translation: 選擇字體
-        public static var Window : String { return  "FontPicker.Window".localized }
+        /// Base translation: Text Cell
+        public static var TextCell : String { return  "FontPicker.TextCell".localized }
+
+        /// Base translation: 测试
+        public static var Test : String { return  "FontPicker.Test".localized }
 
         /// Base translation: 好
         public static var OK : String { return  "FontPicker.OK".localized }
 
-        /// Base translation: 預覽
-        public static var Preview : String { return  "FontPicker.Preview".localized }
+        /// Base translation: 选择字体
+        public static var Window : String { return  "FontPicker.Window".localized }
 
-        /// Base translation: 自定義:
-        public static var Other : String { return  "FontPicker.Other".localized }
-
-        /// Base translation: 測試
-        public static var Test : String { return  "FontPicker.Test".localized }
+        /// Base translation: 过滤:
+        public static var Filter : String { return  "FontPicker.Filter".localized }
 
     }
 
     public class Osd {
 
-        /// Base translation: 聲音開啟
+        /// Base translation: 取消静音
         public static var Unmute : String { return  "Osd.Unmute".localized }
 
-        /// Base translation: 已找到%d個字幕，下載中...
+        /// Base translation: 已找到 %d 个字幕。下载中...
         public static func SubFound(value1 : Int) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.SubFound", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 長寬比: %@
+        /// Base translation: 长宽比：%@
         public static func Aspect(value1 : String) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.Aspect", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 正在搜尋在線字幕...
+        /// Base translation: 查找在线字幕中...
         public static var FindOnlineSub : String { return  "Osd.FindOnlineSub".localized }
 
-        /// Base translation: 已將 %i 加入播放列表
+        /// Base translation: 添加了 %i 个文件到播放列表
         public static func AddToPlaylist(value1 : Int) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.AddToPlaylist", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 網路異常
+        /// Base translation: 网络错误
         public static var NetworkError : String { return  "Osd.NetworkError".localized }
 
-        /// Base translation: 無法讀取檔案
+        /// Base translation: 读取文件错误
         public static var FileError : String { return  "Osd.FileError".localized }
 
-        /// Base translation: 暫停
+        /// Base translation: 暂停
         public static var Pause : String { return  "Osd.Pause".localized }
 
-        /// Base translation: 字幕位置: %.1f
+        /// Base translation: 字幕位置：%.1f
         public static func SubtitlePos(value1 : Double) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.SubtitlePos", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 速度: %.2fx
+        /// Base translation: 速度：%.2fx
         public static func Speed(value1 : Double) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.Speed", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 裁切: %@
+        /// Base translation: 剪切：%@
         public static func Crop(value1 : String) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.Crop", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 繼續
+        /// Base translation: 继续
         public static var Resume : String { return  "Osd.Resume".localized }
 
-        /// Base translation: 轉過: %i°
+        /// Base translation: 旋转：%i°
         public static func Rotate(value1 : Int) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.Rotate", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 登入失敗
+        /// Base translation: 无法登录
         public static var CannotLogin : String { return  "Osd.CannotLogin".localized }
 
         /// Base translation: 已取消
         public static var Canceled : String { return  "Osd.Canceled".localized }
 
-        /// Base translation: 章節: %@
+        /// Base translation: 章节：%@
         public static func Chapter(value1 : String) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.Chapter", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 已儲存字幕
+        /// Base translation: 字幕已保存
         public static var SubSaved : String { return  "Osd.SubSaved".localized }
 
-        /// Base translation: 已下載字幕
+        /// Base translation: 字幕已下载
         public static var SubDownloaded : String { return  "Osd.SubDownloaded".localized }
 
-        /// Base translation: 熒幕已截取
+        /// Base translation: 已保存截图
         public static var Screenshot : String { return  "Osd.Screenshot".localized }
 
         /// Base translation: 停止
         public static var Stop : String { return  "Osd.Stop".localized }
 
-        /// Base translation: 找不到字幕
+        /// Base translation: 未找到字幕
         public static var SubNotFound : String { return  "Osd.SubNotFound".localized }
 
-        /// Base translation: 字幕大小: %.2f倍
+        /// Base translation: 字幕缩放：%.2fx
         public static func SubtitleScale(value1 : Double) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.SubtitleScale", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 抗交錯: %@
+        /// Base translation: 反交错：%@
         public static func Deinterlace(value1 : String) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.Deinterlace", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 已清空播放列表
+        /// Base translation: 清除播放列表
         public static var ClearPlaylist : String { return  "Osd.ClearPlaylist".localized }
 
-        /// Base translation: 靜音
+        /// Base translation: 静音
         public static var Mute : String { return  "Osd.Mute".localized }
 
-        /// Base translation: 音量: %i
+        /// Base translation: 音量：%i
         public static func Volume(value1 : Int) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Osd.Volume", value: nil, table: nil), value1)
         }
@@ -180,44 +180,44 @@ public class I18N {
 
         public class AudioDelay {
 
-            /// Base translation: 音訊延遲: 向前%.2f秒
+            /// Base translation: 音频延迟：提前 %.2f 秒
             public static func Earlier(value1 : Double) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Osd.AudioDelay.Earlier", value: nil, table: nil), value1)
             }
 
-            /// Base translation: 音訊延遲: 無
-            public static var Nodelay : String { return  "Osd.AudioDelay.Nodelay".localized }
-
-            /// Base translation: 音訊延遲: 向後%.2f秒
+            /// Base translation: 音频延迟：延迟 %.2f 秒
             public static func Later(value1 : Double) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Osd.AudioDelay.Later", value: nil, table: nil), value1)
             }
+
+            /// Base translation: 音频延迟：无延迟
+            public static var Nodelay : String { return  "Osd.AudioDelay.Nodelay".localized }
 
         }
 
         public class VideoEq {
 
-            /// Base translation: 飽和度: %i
+            /// Base translation: 饱和度：%i
             public static func Saturation(value1 : Int) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Osd.VideoEq.Saturation", value: nil, table: nil), value1)
             }
 
-            /// Base translation: 色調: %i
+            /// Base translation: 色调：%i
             public static func Hue(value1 : Int) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Osd.VideoEq.Hue", value: nil, table: nil), value1)
             }
 
-            /// Base translation: 伽瑪: %i
-            public static func Gamma(value1 : Int) -> String {
-                return String(format: I18N.bundle.localizedString(forKey: "Osd.VideoEq.Gamma", value: nil, table: nil), value1)
-            }
-
-            /// Base translation: 明度: %i
+            /// Base translation: 亮度：%i
             public static func Brightness(value1 : Int) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Osd.VideoEq.Brightness", value: nil, table: nil), value1)
             }
 
-            /// Base translation: 對比度: %i
+            /// Base translation: 反差：%i
+            public static func Gamma(value1 : Int) -> String {
+                return String(format: I18N.bundle.localizedString(forKey: "Osd.VideoEq.Gamma", value: nil, table: nil), value1)
+            }
+
+            /// Base translation: 对比度：%i
             public static func Contrast(value1 : Int) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Osd.VideoEq.Contrast", value: nil, table: nil), value1)
             }
@@ -226,30 +226,30 @@ public class I18N {
 
         public class SubDelay {
 
-            /// Base translation: 字幕延遲: 向前%.2f秒
+            /// Base translation: 字幕延迟：提前 %.2f 秒
             public static func Earlier(value1 : Double) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Osd.SubDelay.Earlier", value: nil, table: nil), value1)
             }
 
-            /// Base translation: 字幕延遲: 向後%.2f秒
+            /// Base translation: 字幕延迟：延迟 %.2f 秒
             public static func Later(value1 : Double) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Osd.SubDelay.Later", value: nil, table: nil), value1)
             }
 
-            /// Base translation: 字幕延遲: 無
+            /// Base translation: 字幕延迟：无延迟
             public static var Nodelay : String { return  "Osd.SubDelay.Nodelay".localized }
 
         }
 
         public class Abloop {
 
-            /// Base translation: AB循環: B
+            /// Base translation: AB循环：B
             public static var B : String { return  "Osd.Abloop.B".localized }
 
-            /// Base translation: AB循環: A
+            /// Base translation: AB循环：A
             public static var A : String { return  "Osd.Abloop.A".localized }
 
-            /// Base translation: AB循環: 復原
+            /// Base translation: AB循环：清除
             public static var Clear : String { return  "Osd.Abloop.Clear".localized }
 
         }
@@ -257,279 +257,288 @@ public class I18N {
 
     public class PlMenu {
 
-        /// Base translation: 即將播放
+        /// Base translation: 接下来播放
         public static var PlayNext : String { return  "PlMenu.PlayNext".localized }
 
-        /// Base translation: 批量移除
-        public static var RemoveMulti : String { return  "PlMenu.RemoveMulti".localized }
+        /// Base translation: 错误的字幕!
+        public static var WrongSub : String { return  "PlMenu.WrongSub".localized }
 
-        /// Base translation: 在新視窗中打開
+        /// Base translation: 在新窗口中打开
         public static var PlayInNewWindow : String { return  "PlMenu.PlayInNewWindow".localized }
 
-        /// Base translation: 於播放完畢後刪除
+        /// Base translation: 播放后移到垃圾桶
         public static var DeleteAfterPlay : String { return  "PlMenu.DeleteAfterPlay".localized }
-
-        /// Base translation: 錯誤的字幕!
-        public static var WrongSub : String { return  "PlMenu.WrongSub".localized }
 
         /// Base translation: 添加字幕…
         public static var AddSub : String { return  "PlMenu.AddSub".localized }
 
-        /// Base translation: 刪除
+        /// Base translation: 移除选中项
+        public static var RemoveMulti : String { return  "PlMenu.RemoveMulti".localized }
+
+        /// Base translation: 移到垃圾桶
         public static var Delete : String { return  "PlMenu.Delete".localized }
 
-        /// Base translation: 已匹配 %d 個字幕
+        /// Base translation: 已匹配 %d 个字幕
         public static func MatchedSub(value1 : Int) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "PlMenu.MatchedSub", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 清空播放列表
+        /// Base translation: 清除播放列表
         public static var ClearPlaylist : String { return  "PlMenu.ClearPlaylist".localized }
 
         /// Base translation: 移除
         public static var Remove : String { return  "PlMenu.Remove".localized }
 
-        /// Base translation: 添加檔案...
+        /// Base translation: 添加项目…
         public static var AddItem : String { return  "PlMenu.AddItem".localized }
 
-        /// Base translation: 在 Finder 中打開
+        /// Base translation: 在 Finder 中显示
         public static var RevealInFinder : String { return  "PlMenu.RevealInFinder".localized }
 
-        /// Base translation: 批量播放，並於播放完畢後刪除
+        /// Base translation: 播放后将选中项移到垃圾桶
         public static var DeleteAfterPlayMulti : String { return  "PlMenu.DeleteAfterPlayMulti".localized }
 
-        /// Base translation: %d個檔案
+        /// Base translation: %d 个项目
         public static func TitleMulti(value1 : Int) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "PlMenu.TitleMulti", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 批量刪除
+        /// Base translation: 将选中项移到垃圾桶
         public static var DeleteMulti : String { return  "PlMenu.DeleteMulti".localized }
 
     }
 
     public class MainMenu {
 
-        /// Base translation: 音訊過濾...
+        /// Base translation: 音频滤镜…
         public static var AudioFilters : String { return  "MainMenu.AudioFilters".localized }
 
-        /// Base translation: 檢視器
+        /// Base translation: 检查器
         public static var Inspector : String { return  "MainMenu.Inspector".localized }
 
-        /// Base translation: 將當前播放檔丢到垃圾桶
+        /// Base translation: 删除当前文件
         public static var DeleteCurrentFile : String { return  "MainMenu.DeleteCurrentFile".localized }
 
-        /// Base translation: 縮小
+        /// Base translation: 小一点
         public static var SmallerSize : String { return  "MainMenu.SmallerSize".localized }
 
-        /// Base translation: 清空菜單
+        /// Base translation: 清空菜单
         public static var ClearMenu : String { return  "MainMenu.ClearMenu".localized }
 
         /// Base translation: 音量 - 5%
         public static var VolumeMinusFivePercent : String { return  "MainMenu.VolumeMinusFivePercent".localized }
 
-        /// Base translation: 旋轉
+        /// Base translation: 旋转
         public static var Rotation : String { return  "MainMenu.Rotation".localized }
 
-        /// Base translation: 音訊延遲:
+        /// Base translation: 音频延迟:
         public static var AudioDelay : String { return  "MainMenu.AudioDelay".localized }
 
-        /// Base translation: 長寬比
+        /// Base translation: 长宽比
         public static var AspectRatio : String { return  "MainMenu.AspectRatio".localized }
 
-        /// Base translation: 字幕延遲: 
+        /// Base translation: 音乐模式
+        public static var MusicMode : String { return  "MainMenu.MusicMode".localized }
+
+        /// Base translation: 字幕延迟:
         public static var SubtitleDelay : String { return  "MainMenu.SubtitleDelay".localized }
 
-        /// Base translation: 進階截圖...
+        /// Base translation: 高级截图…
         public static var AdvancedScreenshot : String { return  "MainMenu.AdvancedScreenshot".localized }
 
-        /// Base translation: 視訊
+        /// Base translation: 视频
         public static var Video : String { return  "MainMenu.Video".localized }
 
-        /// Base translation: 音訊延遲 + 0.5秒
+        /// Base translation: 音频延迟 + 0.5秒
         public static var AudioDelayPlusZeroPointFives : String { return  "MainMenu.AudioDelayPlusZeroPointFives".localized }
 
         /// Base translation: 音量 + 1%
         public static var VolumePlusOnePercent : String { return  "MainMenu.VolumePlusOnePercent".localized }
 
-        /// Base translation: 重置音訊延遲
+        /// Base translation: 重置音频延迟
         public static var ResetAudioDelay : String { return  "MainMenu.ResetAudioDelay".localized }
 
         /// Base translation: 分享
         public static var Share : String { return  "MainMenu.Share".localized }
 
-        /// Base translation: 服務
+        /// Base translation: 服务
         public static var Services : String { return  "MainMenu.Services".localized }
 
-        /// Base translation: 在新視窗中打開 URL…
+        /// Base translation: 在新窗口中打开 URL…
         public static var OpenURLInNewWindow : String { return  "MainMenu.OpenURLInNewWindow".localized }
 
-        /// Base translation: 檔案
+        /// Base translation: 去台标
+        public static var Delogo : String { return  "MainMenu.Delogo".localized }
+
+        /// Base translation: 文件
         public static var File : String { return  "MainMenu.File".localized }
 
-        /// Base translation: 字幕延遲 - 0.5秒
+        /// Base translation: 字幕延迟 - 0.5秒
         public static var SubtitleDelayMinusZeroPointFives : String { return  "MainMenu.SubtitleDelayMinusZeroPointFives".localized }
 
-        /// Base translation: 音訊裝置
+        /// Base translation: 静音
+        public static var Mute : String { return  "MainMenu.Mute".localized }
+
+        /// Base translation: 音频设备
         public static var AudioDevice : String { return  "MainMenu.AudioDevice".localized }
 
-        /// Base translation: 靜音
-        public static var Mute : String { return  "MainMenu.Mute".localized }
+        /// Base translation: 将 Leaf 设置为默认播放器…
+        public static var SetLeafAsTheDefaultApp : String { return  "MainMenu.SetLeafAsTheDefaultApp".localized }
+
+        /// Base translation: 字幕延迟 + 0.5秒
+        public static var SubtitleDelayPlusZeroPointFives : String { return  "MainMenu.SubtitleDelayPlusZeroPointFives".localized }
+
+        /// Base translation: 关于 Leaf
+        public static var AboutLeaf : String { return  "MainMenu.AboutLeaf".localized }
+
+        /// Base translation: 显示所有
+        public static var ShowAll : String { return  "MainMenu.ShowAll".localized }
+
+        /// Base translation: 播放列表循环
+        public static var PlaylistLoop : String { return  "MainMenu.PlaylistLoop".localized }
+
+        /// Base translation: 在新窗口中打开…
+        public static var OpenInNewWindow : String { return  "MainMenu.OpenInNewWindow".localized }
+
+        /// Base translation: 偏好设置…
+        public static var Preferences : String { return  "MainMenu.Preferences".localized }
+
+        /// Base translation: 停止并清空播放列表
+        public static var StopAndClearPlaylists : String { return  "MainMenu.StopAndClearPlaylists".localized }
 
         /// Base translation: 裁切
         public static var Crop : String { return  "MainMenu.Crop".localized }
 
-        /// Base translation: 將 Leaf 設爲預設APP…
-        public static var SetLeafAsTheDefaultApp : String { return  "MainMenu.SetLeafAsTheDefaultApp".localized }
-
-        /// Base translation: 字幕延遲 + 0.5秒
-        public static var SubtitleDelayPlusZeroPointFives : String { return  "MainMenu.SubtitleDelayPlusZeroPointFives".localized }
-
-        /// Base translation: 關於 Leaf
-        public static var AboutLeaf : String { return  "MainMenu.AboutLeaf".localized }
-
-        /// Base translation: 顯示全部
-        public static var ShowAll : String { return  "MainMenu.ShowAll".localized }
-
-        /// Base translation: 列表循環
-        public static var PlaylistLoop : String { return  "MainMenu.PlaylistLoop".localized }
-
-        /// Base translation: 在新視窗中打開…
-        public static var OpenInNewWindow : String { return  "MainMenu.OpenInNewWindow".localized }
-
-        /// Base translation: 偏好設定...
-        public static var Preferences : String { return  "MainMenu.Preferences".localized }
-
-        /// Base translation: 停止並清空播放列表
-        public static var StopAndClearPlaylists : String { return  "MainMenu.StopAndClearPlaylists".localized }
-
-        /// Base translation: 字幕
-        public static var Subtitles : String { return  "MainMenu.Subtitles".localized }
-
-        /// Base translation: 下一幀
+        /// Base translation: 下一帧
         public static var NextFrame : String { return  "MainMenu.NextFrame".localized }
 
         /// Base translation: 播放
         public static var Playback : String { return  "MainMenu.Playback".localized }
 
+        /// Base translation: 字幕
+        public static var Subtitles : String { return  "MainMenu.Subtitles".localized }
+
         /// Base translation: 音量:
         public static var Volume : String { return  "MainMenu.Volume".localized }
 
-        /// Base translation: 後退5秒
+        /// Base translation: 后退5秒
         public static var StepBackwardFives : String { return  "MainMenu.StepBackwardFives".localized }
 
-        /// Base translation: 編碼
+        /// Base translation: 编码
         public static var Encoding : String { return  "MainMenu.Encoding".localized }
 
-        /// Base translation: 存儲已下載字幕
+        /// Base translation: 保存下载的字幕
         public static var SaveDownloadedSubtitle : String { return  "MainMenu.SaveDownloadedSubtitle".localized }
 
-        /// Base translation: A-B 循環
+        /// Base translation: A-B 循环
         public static var ABLoop : String { return  "MainMenu.ABLoop".localized }
 
-        /// Base translation: 自定 Touch Bar...
+        /// Base translation: 自定义 Touch Bar…
         public static var CustomTouchBar : String { return  "MainMenu.CustomTouchBar".localized }
 
-        /// Base translation: 檢查更新...
+        /// Base translation: 检查更新…
         public static var CheckForUpdates : String { return  "MainMenu.CheckForUpdates".localized }
 
-        /// Base translation: <無>
+        /// Base translation: <无>
         public static var None : String { return  "MainMenu.None".localized }
 
-        /// Base translation: 第二字幕
+        /// Base translation: 副字幕
         public static var SecondSubtitle : String { return  "MainMenu.SecondSubtitle".localized }
 
-        /// Base translation: 符合熒幕大小
+        /// Base translation: 适应屏幕
         public static var FitToScreen : String { return  "MainMenu.FitToScreen".localized }
 
-        /// Base translation: 全部縮到最小
+        /// Base translation: 最小化全部
         public static var MinimizeAll : String { return  "MainMenu.MinimizeAll".localized }
 
-        /// Base translation: 重置字幕縮放
+        /// Base translation: 重置字幕缩放
         public static var ResetSubtitleScale : String { return  "MainMenu.ResetSubtitleScale".localized }
 
-        /// Base translation: 跳轉至...
+        /// Base translation: 跳转至…
         public static var JumpTo : String { return  "MainMenu.JumpTo".localized }
 
-        /// Base translation: 音訊軌道
+        /// Base translation: 音频轨道
         public static var AudioTrack : String { return  "MainMenu.AudioTrack".localized }
 
-        /// Base translation: 字體...
+        /// Base translation: 字体…
         public static var Font : String { return  "MainMenu.Font".localized }
 
-        /// Base translation: 前往截圖檔案夾
+        /// Base translation: 前往截图文件夹
         public static var GoToScreenshotFolder : String { return  "MainMenu.GoToScreenshotFolder".localized }
 
-        /// Base translation: 循環播放
+        /// Base translation: 单文件循环
         public static var FileLoop : String { return  "MainMenu.FileLoop".localized }
 
-        /// Base translation: 展開播放列表
+        /// Base translation: 播放列表面板
         public static var ShowPlaylistPanel : String { return  "MainMenu.ShowPlaylistPanel".localized }
 
-        /// Base translation: 暫停
+        /// Base translation: 暂停
         public static var Pause : String { return  "MainMenu.Pause".localized }
 
-        /// Base translation: 音訊延遲 - 0.5秒
+        /// Base translation: 音频延迟 - 0.5秒
         public static var AudioDelayMinusZeroPointFives : String { return  "MainMenu.AudioDelayMinusZeroPointFives".localized }
 
         /// Base translation: 退出 Leaf
         public static var QuitLeaf : String { return  "MainMenu.QuitLeaf".localized }
 
-        /// Base translation: 縮到最小
+        /// Base translation: 最小化
         public static var Minimize : String { return  "MainMenu.Minimize".localized }
 
-        /// Base translation: 打開最近檔案
+        /// Base translation: 打开最近文件
         public static var OpenRecent : String { return  "MainMenu.OpenRecent".localized }
 
-        /// Base translation: 截取畫面
+        /// Base translation: 截屏
         public static var TakeAScreenshot : String { return  "MainMenu.TakeAScreenshot".localized }
 
-        /// Base translation: 縮小
+        /// Base translation: 缩小
         public static var ScaleDown : String { return  "MainMenu.ScaleDown".localized }
 
-        /// Base translation: 存儲當前播放列表...
+        /// Base translation: 保存当前播放列表…
         public static var SaveCurrentPlaylist : String { return  "MainMenu.SaveCurrentPlaylist".localized }
 
-        /// Base translation: 主菜單
+        /// Base translation: 主菜单
         public static var MainMenu : String { return  "MainMenu.MainMenu".localized }
 
-        /// Base translation: 打開 URL...
+        /// Base translation: 打开 URL…
         public static var OpenURL : String { return  "MainMenu.OpenURL".localized }
 
         /// Base translation: 原始大小
         public static var NormalSize : String { return  "MainMenu.NormalSize".localized }
 
-        /// Base translation: 雙倍大小
+        /// Base translation: 双倍大小
         public static var DoubleSize : String { return  "MainMenu.DoubleSize".localized }
 
-        /// Base translation: 幫助
+        /// Base translation: 帮助
         public static var Help : String { return  "MainMenu.Help".localized }
 
-        /// Base translation: 視窗置頂
+        /// Base translation: 窗口置顶
         public static var FloatOnTop : String { return  "MainMenu.FloatOnTop".localized }
 
-        /// Base translation: Leaf 幫助
+        /// Base translation: Leaf 帮助
         public static var LeafHelp : String { return  "MainMenu.LeafHelp".localized }
 
-        /// Base translation: 音訊
+        /// Base translation: 音频
         public static var Audio : String { return  "MainMenu.Audio".localized }
 
-        /// Base translation: 打開...
+        /// Base translation: 打开…
         public static var Open : String { return  "MainMenu.Open".localized }
 
-        /// Base translation: 視訊軌道
+        /// Base translation: 视频轨道
         public static var VideoTrack : String { return  "MainMenu.VideoTrack".localized }
 
         /// Base translation: 播放列表
         public static var Playlist : String { return  "MainMenu.Playlist".localized }
 
-        /// Base translation: 翻轉
+        /// Base translation: 翻转
         public static var Flip : String { return  "MainMenu.Flip".localized }
 
         /// Base translation: 字幕
         public static var Subtitle : String { return  "MainMenu.Subtitle".localized }
 
-        /// Base translation: 視窗
+        /// Base translation: 去台标
+        public static var DeLogo : String { return  "MainMenu.DeLogo".localized }
+
+        /// Base translation: 窗口
         public static var Window : String { return  "MainMenu.Window".localized }
 
         /// Base translation: 一半大小
@@ -541,58 +550,61 @@ public class I18N {
         /// Base translation: 放大
         public static var ScaleUp : String { return  "MainMenu.ScaleUp".localized }
 
-        /// Base translation: 縮放
+        /// Base translation: 缩放
         public static var Zoom : String { return  "MainMenu.Zoom".localized }
 
-        /// Base translation: 回到開頭
+        /// Base translation: 回到开头
         public static var JumpToBeginning : String { return  "MainMenu.JumpToBeginning".localized }
 
-        /// Base translation: 重置字幕延遲
+        /// Base translation: 重置字幕延迟
         public static var ResetSubtitleDelay : String { return  "MainMenu.ResetSubtitleDelay".localized }
 
-        /// Base translation: 上一幀
+        /// Base translation: 上一帧
         public static var PreviousFrame : String { return  "MainMenu.PreviousFrame".localized }
 
-        /// Base translation: 查找在線字幕...
+        /// Base translation: Github
+        public static var Github : String { return  "MainMenu.Github".localized }
+
+        /// Base translation: 查找在线字幕…
         public static var FindOnlineSubtitles : String { return  "MainMenu.FindOnlineSubtitles".localized }
 
-        /// Base translation: 視訊濾鏡...
+        /// Base translation: 视频滤镜…
         public static var VideoFilters : String { return  "MainMenu.VideoFilters".localized }
 
-        /// Base translation: 新建視窗
+        /// Base translation: 新建窗口
         public static var NewWindow : String { return  "MainMenu.NewWindow".localized }
 
-        /// Base translation: 網站
+        /// Base translation: 网站
         public static var Website : String { return  "MainMenu.Website".localized }
 
-        /// Base translation: 置頂全部視窗
+        /// Base translation: 前置所有窗口
         public static var BringAllToFront : String { return  "MainMenu.BringAllToFront".localized }
 
-        /// Base translation: 快速設定
+        /// Base translation: 快速设置
         public static var ShowQuickSettingsPanel : String { return  "MainMenu.ShowQuickSettingsPanel".localized }
 
-        /// Base translation: 隱藏 Leaf
+        /// Base translation: 隐藏 Leaf
         public static var HideLeaf : String { return  "MainMenu.HideLeaf".localized }
 
-        /// Base translation: 隱藏其他
+        /// Base translation: 隐藏其他
         public static var HideOthers : String { return  "MainMenu.HideOthers".localized }
 
-        /// Base translation: 抗交錯
+        /// Base translation: 反交错
         public static var Deinterlace : String { return  "MainMenu.Deinterlace".localized }
 
-        /// Base translation: 展開章節列表
+        /// Base translation: 章节面板
         public static var ShowChaptersPanel : String { return  "MainMenu.ShowChaptersPanel".localized }
 
-        /// Base translation: 水平翻轉
+        /// Base translation: 水平 (镜像)
         public static var HorizontalMirror : String { return  "MainMenu.HorizontalMirror".localized }
 
-        /// Base translation: 增大
+        /// Base translation: 大一点
         public static var BiggerSize : String { return  "MainMenu.BiggerSize".localized }
 
-        /// Base translation: 關閉
+        /// Base translation: 关闭
         public static var Close : String { return  "MainMenu.Close".localized }
 
-        /// Base translation: 豎直翻轉
+        /// Base translation: 垂直 (翻转)
         public static var VerticalFlip : String { return  "MainMenu.VerticalFlip".localized }
 
         /// Base translation: 音量 + 5%
@@ -601,19 +613,19 @@ public class I18N {
         /// Base translation: 原始大小 (Retina)
         public static var NormalSizeRetina : String { return  "MainMenu.NormalSizeRetina".localized }
 
-        /// Base translation: 章節
+        /// Base translation: 章节
         public static var Chapter : String { return  "MainMenu.Chapter".localized }
 
-        /// Base translation: 快進5秒
+        /// Base translation: 前进5秒
         public static var StepForwardFives : String { return  "MainMenu.StepForwardFives".localized }
 
-        /// Base translation: 播放記錄
+        /// Base translation: 播放历史
         public static var PlaybackHistory : String { return  "MainMenu.PlaybackHistory".localized }
 
-        /// Base translation: 進入全熒幕
+        /// Base translation: 全屏
         public static var EnterFullScreen : String { return  "MainMenu.EnterFullScreen".localized }
 
-        /// Base translation: 加載外置字幕...
+        /// Base translation: 加载外置字幕…
         public static var LoadExternalSubtitle : String { return  "MainMenu.LoadExternalSubtitle".localized }
 
         /// Base translation: 音量 - 1%
@@ -623,10 +635,10 @@ public class I18N {
 
     public class Quicksetting {
 
-        /// Base translation: 默認
+        /// Base translation: 默认
         public static var ItemDefault : String { return  "Quicksetting.ItemDefault".localized }
 
-        /// Base translation: 空
+        /// Base translation: 无
         public static var ItemNone : String { return  "Quicksetting.ItemNone".localized }
 
     }
@@ -636,13 +648,13 @@ public class I18N {
         /// Base translation: Box
         public static var Box : String { return  "PrefKeyBinding.Box".localized }
 
-        /// Base translation: 鍵位
+        /// Base translation: 键位
         public static var Key : String { return  "PrefKeyBinding.Key".localized }
 
-        /// Base translation: 新增...
+        /// Base translation: 新建…
         public static var New : String { return  "PrefKeyBinding.New".localized }
 
-        /// Base translation: 複製...
+        /// Base translation: 复制…
         public static var Duplicate : String { return  "PrefKeyBinding.Duplicate".localized }
 
         /// Base translation: 命令
@@ -651,45 +663,54 @@ public class I18N {
         /// Base translation: Text Cell
         public static var TextCell : String { return  "PrefKeyBinding.TextCell".localized }
 
-        /// Base translation: 使用 macOS 快速鍵
+        /// Base translation: 使用 macOS 媒体键
         public static var UseMediaKeys : String { return  "PrefKeyBinding.UseMediaKeys".localized }
 
-        /// Base translation: 顯示原値
+        /// Base translation: 显示原始值
         public static var DisplayRawValues : String { return  "PrefKeyBinding.DisplayRawValues".localized }
 
-        /// Base translation: 在 Finder 中瀏覽設定檔案
+        /// Base translation: 在 Finder 中查看配置文件
         public static var RevealConfigFileInFinder : String { return  "PrefKeyBinding.RevealConfigFileInFinder".localized }
 
-        /// Base translation: 設定檔案:
+        /// Base translation: 配置文件:
         public static var Configuration : String { return  "PrefKeyBinding.Configuration".localized }
 
-        /// Base translation: 啟用 Apple Remote
+        /// Base translation: 启用 Apple Remote 支持
         public static var EnableAppleRemoteSupport : String { return  "PrefKeyBinding.EnableAppleRemoteSupport".localized }
 
-        /// Base translation: 刪除此設定檔案
+        /// Base translation: 删除此配置文件
         public static var DeleteThisConfigFile : String { return  "PrefKeyBinding.DeleteThisConfigFile".localized }
 
     }
 
     public class OpenURLAccessory {
 
-        /// Base translation: 使用我們的瀏覽器插件以直接在網頁內播放視訊
-        public static var UseOurBrowserExtensionToOpenVideoRightFromWebpagesPoint : String { return  "OpenURLAccessory.UseOurBrowserExtensionToOpenVideoRightFromWebpagesPoint".localized }
+        /// Base translation: Chrome
+        public static var Chrome : String { return  "OpenURLAccessory.Chrome".localized }
 
-        /// Base translation: 密碼
-        public static var Password : String { return  "OpenURLAccessory.Password".localized }
-
-        /// Base translation: 用戶名
+        /// Base translation: 用户名
         public static var Username : String { return  "OpenURLAccessory.Username".localized }
 
-        /// Base translation: HTTP 認證
+        /// Base translation: Safari
+        public static var Safari : String { return  "OpenURLAccessory.Safari".localized }
+
+        /// Base translation: 密码
+        public static var Password : String { return  "OpenURLAccessory.Password".localized }
+
+        /// Base translation: HTTP 登录
         public static var HTTPAuthentication : String { return  "OpenURLAccessory.HTTPAuthentication".localized }
+
+        /// Base translation: 使用 Leaf 的浏览器插件来直接播放网页中的视频（需要 youtube-dl 支持）。
+        public static var UseOurBrowserExtensionToOpenVideoRightFromWebpagesPoint : String { return  "OpenURLAccessory.UseOurBrowserExtensionToOpenVideoRightFromWebpagesPoint".localized }
+
+        /// Base translation: Box
+        public static var Box : String { return  "OpenURLAccessory.Box".localized }
 
     }
 
     public class Menu {
 
-        /// Base translation: 音訊延遲: %.2f秒
+        /// Base translation: 音频延迟: %.2f秒
         public static func AudioDelay(value1 : Double) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Menu.AudioDelay", value: nil, table: nil), value1)
         }
@@ -699,28 +720,68 @@ public class I18N {
             return String(format: I18N.bundle.localizedString(forKey: "Menu.Volume", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 繼續
+        /// Base translation: 继续
         public static var Resume : String { return  "Menu.Resume".localized }
 
-        /// Base translation: 暫停
+        /// Base translation: 暂停
         public static var Pause : String { return  "Menu.Pause".localized }
 
-        /// Base translation: 進入全熒幕
+        /// Base translation: 进入全屏
         public static var Fullscreen : String { return  "Menu.Fullscreen".localized }
 
-        /// Base translation: 退出畫中畫
+        /// Base translation: 离开「画中画」
         public static var ExitPip : String { return  "Menu.ExitPip".localized }
 
-        /// Base translation: 退出全熒幕
+        /// Base translation: 离开全屏
         public static var ExitFullscreen : String { return  "Menu.ExitFullscreen".localized }
 
-        /// Base translation: 字幕延遲: %.2f秒
+        /// Base translation: 字幕延迟: %.2f秒
         public static func SubDelay(value1 : Double) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Menu.SubDelay", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 進入畫中畫
+        /// Base translation: 进入「画中画」
         public static var Pip : String { return  "Menu.Pip".localized }
+
+    }
+
+    public class Playlist {
+
+        /// Base translation: Chapter Title
+        public static var ChapterTitle : String { return  "Playlist.ChapterTitle".localized }
+
+        /// Base translation: 章节
+        public static var ChapterCap : String { return  "Playlist.ChapterCap".localized }
+
+        /// Base translation: 章节
+        public static var Chapters : String { return  "Playlist.Chapters".localized }
+
+        /// Base translation: 00:00 -> 00:00
+        public static var ZeroZeroZeroZeroMinusZeroZeroZeroZero : String { return  "Playlist.ZeroZeroZeroZeroMinusZeroZeroZeroZero".localized }
+
+        /// Base translation: Text Cell
+        public static var TextCell : String { return  "Playlist.TextCell".localized }
+
+        /// Base translation: 播放列表
+        public static var PLAYLIST : String { return  "Playlist.PLAYLIST".localized }
+
+        /// Base translation: 播放列表
+        public static var PlaylistCap : String { return  "Playlist.PlaylistCap".localized }
+
+        /// Base translation: ▶︎
+        public static var _︎ : String { return  "Playlist.▶︎".localized }
+
+        /// Base translation: 播放列表
+        public static var Playlist : String { return  "Playlist.Playlist".localized }
+
+        /// Base translation: 匹配的字幕
+        public static var MatchedSubtitles : String { return  "Playlist.MatchedSubtitles".localized }
+
+        /// Base translation: 错误的字幕!
+        public static var WrongSubtitle_ : String { return  "Playlist.WrongSubtitle!".localized }
+
+        /// Base translation: 章节
+        public static var CHAPTERS : String { return  "Playlist.CHAPTERS".localized }
 
     }
 
@@ -729,61 +790,61 @@ public class I18N {
         /// Base translation: TCP
         public static var TCP : String { return  "PrefNetwork.TCP".localized }
 
-        /// Base translation: 啟用暫存
+        /// Base translation: 启用缓存
         public static var EnableCache : String { return  "PrefNetwork.EnableCache".localized }
 
-        /// Base translation: 暫存區大小 (KB):
+        /// Base translation: Cache buffer 大小 (KB):
         public static var CacheBufferSizeKB : String { return  "PrefNetwork.CacheBufferSizeKB".localized }
 
-        /// Base translation: 參數:
+        /// Base translation: 额外参数:
         public static var RawOptions : String { return  "PrefNetwork.RawOptions".localized }
 
         /// Base translation: HTTP
         public static var HTTP : String { return  "PrefNetwork.HTTP".localized }
 
-        /// Base translation: 需重啟 Leaf 後生效
+        /// Base translation: 重启 Leaf 后生效。
         public static var RequiresRestartingLeafToTakeEffectPoint : String { return  "PrefNetwork.RequiresRestartingLeafToTakeEffectPoint".localized }
 
-        /// Base translation: 網路:
+        /// Base translation: 网络:
         public static var Network : String { return  "PrefNetwork.Network".localized }
 
-        /// Base translation: 自訂 youtube-dl 路徑:
+        /// Base translation: 自定义 youtube-dl 路径
         public static var CustomYoutubeDlPath : String { return  "PrefNetwork.CustomYoutubeDlPath".localized }
 
-        /// Base translation: 客戶端:
+        /// Base translation: 用户代理:
         public static var UserAgent : String { return  "PrefNetwork.UserAgent".localized }
 
-        /// Base translation: 預讀取秒數:
+        /// Base translation: 预读取秒数:
         public static var SecondsToPrefech : String { return  "PrefNetwork.SecondsToPrefech".localized }
 
-        /// Base translation: 自動
+        /// Base translation: 自动
         public static var Auto : String { return  "PrefNetwork.Auto".localized }
 
-        /// Base translation: Leaf 將在此檔案夾內搜尋 youtube-dl，需重啟
+        /// Base translation: Leaf 会在此文件夹中搜索 youtube-dl。需要重启。
         public static var LeafWillSearchYoutubeDlInThisFolderPointRestartNeededPoint : String { return  "PrefNetwork.LeafWillSearchYoutubeDlInThisFolderPointRestartNeededPoint".localized }
 
         /// Base translation: 格式: <key>=<value>[,<key>=<value>[,…]]
         public static var Format_key_Value_Key_Value___ : String { return  "PrefNetwork.Format<key=Value[Key=Value[]]".localized }
 
-        /// Base translation: 默認: 153600
+        /// Base translation: 默认: 153600
         public static var DefaultOneFiveThreeSixZeroZero : String { return  "PrefNetwork.DefaultOneFiveThreeSixZeroZero".localized }
 
-        /// Base translation: 默認: 100
+        /// Base translation: 默认: 100
         public static var DefaultOneZeroZero : String { return  "PrefNetwork.DefaultOneZeroZero".localized }
 
-        /// Base translation: 默認暫存大小 (KB):
+        /// Base translation: 默认缓存大小 (KB):
         public static var DefaultCacheSizeKB : String { return  "PrefNetwork.DefaultCacheSizeKB".localized }
 
-        /// Base translation: 傳輸 RTSP 流時使用:
+        /// Base translation: 传输 RTSP 流时使用:
         public static var TransportRTSPStreamThrough : String { return  "PrefNetwork.TransportRTSPStreamThrough".localized }
 
-        /// Base translation: HTTP 代理:
+        /// Base translation: HTTP 代理
         public static var HTTPProxy : String { return  "PrefNetwork.HTTPProxy".localized }
 
-        /// Base translation: 啟用 youtube-dl
+        /// Base translation: 启用 youtube-dl
         public static var EnableYoutubeDl : String { return  "PrefNetwork.EnableYoutubeDl".localized }
 
-        /// Base translation: 暫存:
+        /// Base translation: 缓存:
         public static var Cache : String { return  "PrefNetwork.Cache".localized }
 
         /// Base translation: UDP
@@ -791,73 +852,36 @@ public class I18N {
 
     }
 
-    public class Playlist {
-
-        /// Base translation: 章節
-        public static var Chapters : String { return  "Playlist.Chapters".localized }
-
-        /// Base translation: 章節
-        public static var CHAPTERS : String { return  "Playlist.CHAPTERS".localized }
-
-        /// Base translation: Text Cell
-        public static var TextCell : String { return  "Playlist.TextCell".localized }
-
-        /// Base translation: ▶︎
-        public static var _︎ : String { return  "Playlist.▶︎".localized }
-
-        /// Base translation: 播放列表
-        public static var PlaylistCap : String { return  "Playlist.PlaylistCap".localized }
-
-        /// Base translation: 錯誤的字幕!
-        public static var WrongSubtitle_ : String { return  "Playlist.WrongSubtitle!".localized }
-
-        /// Base translation: 匹配的字幕
-        public static var MatchedSubtitles : String { return  "Playlist.MatchedSubtitles".localized }
-
-        /// Base translation: 章節
-        public static var ChapterCap : String { return  "Playlist.ChapterCap".localized }
-
-        /// Base translation: 章節名
-        public static var ChapterTitle : String { return  "Playlist.ChapterTitle".localized }
-
-        /// Base translation: 播放列表
-        public static var PLAYLIST : String { return  "Playlist.PLAYLIST".localized }
-
-        /// Base translation: 播放列表
-        public static var Playlist : String { return  "Playlist.Playlist".localized }
-
-    }
-
     public class Touchbar {
 
-        /// Base translation: 前進 30 秒
+        /// Base translation: 前进 30 秒
         public static var Ahead30 : String { return  "Touchbar.Ahead30".localized }
 
-        /// Base translation: 快進
+        /// Base translation: 快进
         public static var FastForward : String { return  "Touchbar.FastForward".localized }
 
-        /// Base translation: 播放 / 暫停
+        /// Base translation: 播放 / 暂停
         public static var PlayPause : String { return  "Touchbar.PlayPause".localized }
 
-        /// Base translation: 下一個視訊
+        /// Base translation: 下一个视频
         public static var NextVideo : String { return  "Touchbar.NextVideo".localized }
 
-        /// Base translation: 前進 15 秒
+        /// Base translation: 前进 15 秒
         public static var Ahead15 : String { return  "Touchbar.Ahead15".localized }
 
         /// Base translation: 音量 +
         public static var IncreaseVolume : String { return  "Touchbar.IncreaseVolume".localized }
 
-        /// Base translation: 後退 30 秒
+        /// Base translation: 后退 30 秒
         public static var Back30 : String { return  "Touchbar.Back30".localized }
 
-        /// Base translation: 上一個視訊
+        /// Base translation: 上一个视频
         public static var PrevVideo : String { return  "Touchbar.PrevVideo".localized }
 
-        /// Base translation: 播放進度
+        /// Base translation: 播放进度
         public static var Time : String { return  "Touchbar.Time".localized }
 
-        /// Base translation: 進度條
+        /// Base translation: 进度条
         public static var Seek : String { return  "Touchbar.Seek".localized }
 
         /// Base translation: 快退
@@ -866,294 +890,131 @@ public class I18N {
         /// Base translation: 音量 -
         public static var DecreaseVolume : String { return  "Touchbar.DecreaseVolume".localized }
 
-        /// Base translation: 後退 15 秒
+        /// Base translation: 后退 15 秒
         public static var Back15 : String { return  "Touchbar.Back15".localized }
 
     }
 
     public class Filter {
 
-        /// Base translation: 濾鏡
+        /// Base translation: 滤镜
         public static var Window : String { return  "Filter.Window".localized }
 
         /// Base translation: Text Cell
         public static var TextCell : String { return  "Filter.TextCell".localized }
 
-        /// Base translation: 濾鏡（指令串）
+        /// Base translation: 滤镜（字符串）
         public static var FilterString : String { return  "Filter.FilterString".localized }
 
-        /// Base translation: 視訊濾鏡
-        public static var VideoFilters : String { return  "Filter.VideoFilters".localized }
-
-        /// Base translation: 音訊濾鏡
+        /// Base translation: 音频滤镜
         public static var AudioFilters : String { return  "Filter.AudioFilters".localized }
+
+        /// Base translation: #
+        public static var Sharp : String { return  "Filter.Sharp".localized }
 
         /// Base translation: Box
         public static var Box : String { return  "Filter.Box".localized }
 
-        /// Base translation: #
-        public static var Sharp : String { return  "Filter.Sharp".localized }
+        /// Base translation: 视频滤镜
+        public static var VideoFilters : String { return  "Filter.VideoFilters".localized }
 
     }
 
     public class Alert {
 
-        /// Base translation: 異常
-        public static var TitleError : String { return  "Alert.TitleError".localized }
-
-        /// Base translation: 當心
-        public static var TitleWarning : String { return  "Alert.TitleWarning".localized }
-
-        /// Base translation: 無法加載腳本: %@
-        public static func ErrorLoadingScript(value1 : String) -> String {
-            return String(format: I18N.bundle.localizedString(forKey: "Alert.ErrorLoadingScript", value: nil, table: nil), value1)
-        }
-
-        /// Base translation: 資訊
-        public static var TitleInfo : String { return  "Alert.TitleInfo".localized }
-
-        /// Base translation: 不支持這個加載的音訊檔
-        public static var UnsupportedAudio : String { return  "Alert.UnsupportedAudio".localized }
-
-        /// Base translation: 打不開該檔案或 URL
+        /// Base translation: 无法打开文件或流！
         public static var ErrorOpen : String { return  "Alert.ErrorOpen".localized }
 
-        /// Base translation: 內部異常%@ (%@) ，當設定%@時
-        public static func MpvError(value1 : String, _ value2 : String, _ value3 : String) -> String {
-            return String(format: I18N.bundle.localizedString(forKey: "Alert.MpvError", value: nil, table: nil), value1, value2, value3)
-        }
+        /// Base translation: 没有可用的视频轨道。
+        public static var NoVideoTrack : String { return  "Alert.NoVideoTrack".localized }
 
-        /// Base translation: URL 格式有誤
-        public static var WrongUrlFormat : String { return  "Alert.WrongUrlFormat".localized }
+        /// Base translation: 无法阻止系统睡眠。
+        public static var Sleep : String { return  "Alert.Sleep".localized }
 
-        /// Base translation: 致命異常: %@  程序將關閉。
-        public static func FatalError(value1 : String) -> String {
-            return String(format: I18N.bundle.localizedString(forKey: "Alert.FatalError", value: nil, table: nil), value1)
-        }
-
-        /// Base translation: 保存%@時發生異常: %@
-        public static func ErrorSavingFile(value1 : String, _ value2 : String) -> String {
-            return String(format: I18N.bundle.localizedString(forKey: "Alert.ErrorSavingFile", value: nil, table: nil), value1, value2)
-        }
-
-        /// Base translation: 找不到%@
+        /// Base translation: 无法找到文件 %@ ！
         public static func ErrorFindingFile(value1 : String) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Alert.ErrorFindingFile", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 刪不掉這個檔案
-        public static var ErrorDeletingFile : String { return  "Alert.ErrorDeletingFile".localized }
+        /// Base translation: URL 格式错误。
+        public static var WrongUrlFormat : String { return  "Alert.WrongUrlFormat".localized }
 
-        /// Base translation: 不支持這個 URL
-        public static var UnsupportedUrl : String { return  "Alert.UnsupportedUrl".localized }
+        /// Base translation: 不支持的外部音频文件。
+        public static var UnsupportedAudio : String { return  "Alert.UnsupportedAudio".localized }
 
-        /// Base translation: 在使用 OpenSubtitles 前請先在「偏好設定」中設定字幕的偏好語言，當前將使用英文（eng）。
+        /// Base translation: 错误
+        public static var TitleError : String { return  "Alert.TitleError".localized }
+
+        /// Base translation: 请在使用 opensubtitles 之前设定字幕语言. 此次将会使用英语 (eng) 。  0.0.7 之后默认的字幕来源将会是 opensubtitles。如果您是中文用户，请在「偏好设置 > 字幕」中确认「字幕来源」为「shooter.cn」，以继续使用射手字幕。
         public static var SubLangNotSet : String { return  "Alert.SubLangNotSet".localized }
 
-        /// Base translation: 不支持這個加載的字幕檔
+        /// Base translation: 没有可打开的文件。
+        public static var NothingToOpen : String { return  "Alert.NothingToOpen".localized }
+
+        /// Base translation: 无法加载脚本 %@！
+        public static func ErrorLoadingScript(value1 : String) -> String {
+            return String(format: I18N.bundle.localizedString(forKey: "Alert.ErrorLoadingScript", value: nil, table: nil), value1)
+        }
+
+        /// Base translation: 提示
+        public static var TitleInfo : String { return  "Alert.TitleInfo".localized }
+
+        /// Base translation: 不支持的 URL。
+        public static var UnsupportedUrl : String { return  "Alert.UnsupportedUrl".localized }
+
+        /// Base translation: 严重错误：%@  程序将立刻结束。
+        public static func FatalError(value1 : String) -> String {
+            return String(format: I18N.bundle.localizedString(forKey: "Alert.FatalError", value: nil, table: nil), value1)
+        }
+
+        /// Base translation: 无法删除文件。
+        public static var ErrorDeletingFile : String { return  "Alert.ErrorDeletingFile".localized }
+
+        /// Base translation: 保存文件 %@ 时出现错误 %@
+        public static func ErrorSavingFile(value1 : String, _ value2 : String) -> String {
+            return String(format: I18N.bundle.localizedString(forKey: "Alert.ErrorSavingFile", value: nil, table: nil), value1, value2)
+        }
+
+        /// Base translation: 不支持的外部字幕。
         public static var UnsupportedSub : String { return  "Alert.UnsupportedSub".localized }
 
-        /// Base translation: 無法阻止熒幕進入睡眠
-        public static var Sleep : String { return  "Alert.Sleep".localized }
+        /// Base translation: 警告
+        public static var TitleWarning : String { return  "Alert.TitleWarning".localized }
 
-
-        public class DeleteHistory {
-
-            /// Base translation: 清空播放記錄
-            public static var Title : String { return  "Alert.DeleteHistory.Title".localized }
-
-            /// Base translation: 確認要刪除當前選定記錄嗎？
-            public static var Message : String { return  "Alert.DeleteHistory.Message".localized }
-
+        /// Base translation: 出现内部错误 %@ (%@) (设定选项 %@ 时)。
+        public static func MpvError(value1 : String, _ value2 : String, _ value3 : String) -> String {
+            return String(format: I18N.bundle.localizedString(forKey: "Alert.MpvError", value: nil, table: nil), value1, value2, value3)
         }
 
-        public class Filter {
-
-            /// Base translation: 設定濾鏡時出現異常，請核對參數格式
-            public static var Incorrect : String { return  "Alert.Filter.Incorrect".localized }
-
-        }
-
-        public class Sub {
-
-            /// Base translation: 登入失敗，請核對您的用戶名、密鑰、網路連接。  %@
-            public static func CannotLogin(value1 : String) -> String {
-                return String(format: I18N.bundle.localizedString(forKey: "Alert.Sub.CannotLogin", value: nil, table: nil), value1)
-            }
-
-            /// Base translation: 無法將您這個密鑰「%@」保存到鑰匙串
-            public static func CannotSavePasswd(value1 : String) -> String {
-                return String(format: I18N.bundle.localizedString(forKey: "Alert.Sub.CannotSavePasswd", value: nil, table: nil), value1)
-            }
-
-            /// Base translation: 請先選定一個已下載的字幕檔
-            public static var NoSelected : String { return  "Alert.Sub.NoSelected".localized }
-
-        }
 
         public class KeybindingConfig {
 
-            /// Base translation: 快速鍵設定檔「%@」無法解析，現將使用 IINA 默認快速鍵代替，請核對該設定檔。
+            /// Base translation: 无法设置快捷键「%@」！已回退到 IINA 默认配置。请检查你的快捷键文件是否正确。
             public static func Error(value1 : String) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Alert.KeybindingConfig.Error", value: nil, table: nil), value1)
             }
 
         }
 
-        public class AddFilter {
-
-            /// Base translation: 新濾鏡
-            public static var Title : String { return  "Alert.AddFilter.Title".localized }
-
-            /// Base translation: 請輸入 mpv 的 vf 或 af 指令串
-            public static var Message : String { return  "Alert.AddFilter.Message".localized }
-
-        }
-
-        public class FilterHwdec {
-
-            /// Base translation: 放棄
-            public static var Abort : String { return  "Alert.FilterHwdec.Abort".localized }
-
-            /// Base translation: 你正在新增視訊濾鏡。然而，當前的硬體解碼器不能很好地支援視訊濾鏡。你可以禁用硬體解碼，或使用支援「拷貝」的解碼器 (將佔用兩倍記憶體)。 你可能需要再操作一次（例如剪下）才能看到效果。
-            public static var Message : String { return  "Alert.FilterHwdec.Message".localized }
-
-            /// Base translation: 使用支援「拷貝」的解碼器
-            public static var UseCopy : String { return  "Alert.FilterHwdec.UseCopy".localized }
-
-            /// Base translation: 關閉硬體解碼
-            public static var TurnOff : String { return  "Alert.FilterHwdec.TurnOff".localized }
-
-        }
-
-        public class Playlist {
-
-            /// Base translation: 無法刪除%@
-            public static func ErrorDeleting(value1 : String) -> String {
-                return String(format: I18N.bundle.localizedString(forKey: "Alert.Playlist.ErrorDeleting", value: nil, table: nil), value1)
-            }
-
-        }
-
-        public class Opensub {
-
-
-            public class Login {
-
-                /// Base translation: OpenSubtitles 登入
-                public static var Title : String { return  "Alert.Opensub.Login.Title".localized }
-
-                /// Base translation: 請輸入用戶名和密鑰
-                public static var Message : String { return  "Alert.Opensub.Login.Message".localized }
-
-            }
-        }
-
-        public class AddWatch {
-
-            /// Base translation: 請輸入一個有效的 mpv 屬性
-            public static var Message : String { return  "Alert.AddWatch.Message".localized }
-
-            /// Base translation: 添加監視屬性
-            public static var Title : String { return  "Alert.AddWatch.Title".localized }
-
-        }
-
-        public class JumpTo {
-
-            /// Base translation: 跳轉至
-            public static var Title : String { return  "Alert.JumpTo.Title".localized }
-
-            /// Base translation: 請輸入跳轉致的位置，例如：20:35
-            public static var Message : String { return  "Alert.JumpTo.Message".localized }
-
-        }
-
-        public class Config {
-
-            /// Base translation: 名稱已存在
-            public static var NameExisting : String { return  "Alert.Config.NameExisting".localized }
-
-            /// Base translation: 無法寫入設定檔
-            public static var CannotWrite : String { return  "Alert.Config.CannotWrite".localized }
-
-            /// Base translation: 無法創建設定檔
-            public static var CannotCreate : String { return  "Alert.Config.CannotCreate".localized }
-
-            /// Base translation: 不能爲空
-            public static var EmptyName : String { return  "Alert.Config.EmptyName".localized }
-
-
-            public class FileExisting {
-
-                /// Base translation: 這不該發生。點「好」覆蓋，點「取消」在 Finder 中查看檔案。
-                public static var Message : String { return  "Alert.Config.FileExisting.Message".localized }
-
-                /// Base translation: 檔案已存在
-                public static var Title : String { return  "Alert.Config.FileExisting.Title".localized }
-
-            }
-
-            public class Duplicate {
-
-                /// Base translation: 設定檔重複
-                public static var Title : String { return  "Alert.Config.Duplicate.Title".localized }
-
-                /// Base translation: 請爲重複的設定檔取名
-                public static var Message : String { return  "Alert.Config.Duplicate.Message".localized }
-
-            }
-
-            public class New {
-
-                /// Base translation: 請爲新設定檔取名
-                public static var Message : String { return  "Alert.Config.New.Message".localized }
-
-                /// Base translation: 新輸入設定
-                public static var Title : String { return  "Alert.Config.New.Title".localized }
-
-            }
-        }
-
-        public class ClearCache {
-
-            /// Base translation: 清除縮圖快取
-            public static var Title : String { return  "Alert.ClearCache.Title".localized }
-
-            /// Base translation: 確定清除所有縮圖快取嗎?
-            public static var Message : String { return  "Alert.ClearCache.Message".localized }
-
-            /// Base translation: 快取已清除。
-            public static var Success : String { return  "Alert.ClearCache.Success".localized }
-
-        }
-
-        public class ChooseMediaFile {
-
-            /// Base translation: 選擇媒體檔
-            public static var Title : String { return  "Alert.ChooseMediaFile.Title".localized }
-
-        }
-
         public class OpenUrl {
 
-            /// Base translation: 打開 URL
-            public static var Title : String { return  "Alert.OpenUrl.Title".localized }
-
-            /// Base translation: 請輸入 URL:
+            /// Base translation: 请输入 URL:
             public static var Message : String { return  "Alert.OpenUrl.Message".localized }
+
+            /// Base translation: 打开 URL
+            public static var Title : String { return  "Alert.OpenUrl.Title".localized }
 
         }
 
         public class SetDefault {
 
-            /// Base translation: 將 IINA 設爲默認 APP
+            /// Base translation: 将 IINA 设为默认播放器
             public static var Title : String { return  "Alert.SetDefault.Title".localized }
 
-            /// Base translation: 即將把 IINA 設定爲其所支援的檔案格式的默認 APP
+            /// Base translation: IINA 将会被关联至所有支持的文件格式。
             public static var Message : String { return  "Alert.SetDefault.Message".localized }
 
-            /// Base translation: 已成功%d個，失敗%d個
+            /// Base translation: 操作已完成。%d 成功，%d 失败。
             public static func Success(value1 : Int, _ value2 : Int) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Alert.SetDefault.Success", value: nil, table: nil), value1, value2)
             }
@@ -1162,175 +1023,361 @@ public class I18N {
 
         public class ExtraOption {
 
-            /// Base translation: 無法設定 --%@=%@（返回值：%d）。請於「偏好設定→高級」中核對您的額外選項設定。
+            /// Base translation: 无法设置选项 --%@=%@ （返回值 %d）。 请在「设置>高级」中检查你的额外 mpv 选项。
             public static func Error(value1 : String, _ value2 : String, _ value3 : Int) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Alert.ExtraOption.Error", value: nil, table: nil), value1, value2, value3)
             }
 
-            /// Base translation: 無法識別用戶自訂的 mpv 設定
+            /// Base translation: 无法读取自定义的 mpv 额外选项。
             public static var CannotRead : String { return  "Alert.ExtraOption.CannotRead".localized }
 
-            /// Base translation: 設定檔檔案夾「%@」無效
+            /// Base translation: 设置配置文件目录 "%@" 时出现错误。
             public static func ConfigFolder(value1 : String) -> String {
                 return String(format: I18N.bundle.localizedString(forKey: "Alert.ExtraOption.ConfigFolder", value: nil, table: nil), value1)
             }
 
-            /// Base translation: 鍵和值不可爲空！
+            /// Base translation: 键或值不能为空！
             public static var Empty : String { return  "Alert.ExtraOption.Empty".localized }
+
+        }
+
+        public class AddFilter {
+
+            /// Base translation: 添加滤镜
+            public static var Title : String { return  "Alert.AddFilter.Title".localized }
+
+            /// Base translation: 请输入符合 mpv 的 vf 或 af 选项格式的滤镜字符串。
+            public static var Message : String { return  "Alert.AddFilter.Message".localized }
+
+        }
+
+        public class Opensub {
+
+
+            public class Login {
+
+                /// Base translation: OpenSubtitles 登录
+                public static var Title : String { return  "Alert.Opensub.Login.Title".localized }
+
+                /// Base translation: 请输入用户名和密码。
+                public static var Message : String { return  "Alert.Opensub.Login.Message".localized }
+
+            }
+        }
+
+        public class DeleteHistory {
+
+            /// Base translation: 确定要删除所选的历史记录吗？
+            public static var Message : String { return  "Alert.DeleteHistory.Message".localized }
+
+            /// Base translation: 删除历史记录
+            public static var Title : String { return  "Alert.DeleteHistory.Title".localized }
+
+        }
+
+        public class JumpTo {
+
+            /// Base translation: 请输入希望跳转的时间。例: 20:35
+            public static var Message : String { return  "Alert.JumpTo.Message".localized }
+
+            /// Base translation: 跳转至
+            public static var Title : String { return  "Alert.JumpTo.Title".localized }
+
+        }
+
+        public class Playlist {
+
+            /// Base translation: 删除 %@ 时出现错误。
+            public static func ErrorDeleting(value1 : String) -> String {
+                return String(format: I18N.bundle.localizedString(forKey: "Alert.Playlist.ErrorDeleting", value: nil, table: nil), value1)
+            }
+
+        }
+
+        public class ClearCache {
+
+            /// Base translation: 清除缩略图缓存
+            public static var Title : String { return  "Alert.ClearCache.Title".localized }
+
+            /// Base translation: 确定清除所有缩略图缓存吗?
+            public static var Message : String { return  "Alert.ClearCache.Message".localized }
+
+            /// Base translation: 缓存已清除。
+            public static var Success : String { return  "Alert.ClearCache.Success".localized }
+
+        }
+
+        public class Filter {
+
+            /// Base translation: 设置滤镜时出现错误。请检查你的参数格式。
+            public static var Incorrect : String { return  "Alert.Filter.Incorrect".localized }
+
+        }
+
+        public class AddWatch {
+
+            /// Base translation: 请输入一个有效的 mpv 属性名。
+            public static var Message : String { return  "Alert.AddWatch.Message".localized }
+
+            /// Base translation: 监视 mpv 属性
+            public static var Title : String { return  "Alert.AddWatch.Title".localized }
+
+        }
+
+        public class Config {
+
+            /// Base translation: 此配置名称已存在。
+            public static var NameExisting : String { return  "Alert.Config.NameExisting".localized }
+
+            /// Base translation: 无法写入配置文件！
+            public static var CannotWrite : String { return  "Alert.Config.CannotWrite".localized }
+
+            /// Base translation: 无法创建配置文件！
+            public static var CannotCreate : String { return  "Alert.Config.CannotCreate".localized }
+
+            /// Base translation: 名称不能为空。
+            public static var EmptyName : String { return  "Alert.Config.EmptyName".localized }
+
+
+            public class FileExisting {
+
+                /// Base translation: 选择「好」来覆盖，选择「取消」来在 Finder 中查看该文件。
+                public static var Message : String { return  "Alert.Config.FileExisting.Message".localized }
+
+                /// Base translation: 同名文件已存在
+                public static var Title : String { return  "Alert.Config.FileExisting.Title".localized }
+
+            }
+
+            public class Duplicate {
+
+                /// Base translation: 请输入复制后的配置文件名。
+                public static var Message : String { return  "Alert.Config.Duplicate.Message".localized }
+
+                /// Base translation: 复制快捷键配置
+                public static var Title : String { return  "Alert.Config.Duplicate.Title".localized }
+
+            }
+
+            public class New {
+
+                /// Base translation: 请输入配置名。
+                public static var Message : String { return  "Alert.Config.New.Message".localized }
+
+                /// Base translation: 新建快捷键配置
+                public static var Title : String { return  "Alert.Config.New.Title".localized }
+
+            }
+        }
+
+        public class Sub {
+
+            /// Base translation: 无法登录。请检查你的用户名、密码及网络状态。  %@
+            public static func CannotLogin(value1 : String) -> String {
+                return String(format: I18N.bundle.localizedString(forKey: "Alert.Sub.CannotLogin", value: nil, table: nil), value1)
+            }
+
+            /// Base translation: 无法将密码保存到钥匙串：%@
+            public static func CannotSavePasswd(value1 : String) -> String {
+                return String(format: I18N.bundle.localizedString(forKey: "Alert.Sub.CannotSavePasswd", value: nil, table: nil), value1)
+            }
+
+            /// Base translation: 请先启用一个下载的字幕。
+            public static var NoSelected : String { return  "Alert.Sub.NoSelected".localized }
+
+        }
+
+        public class FilterHwdec {
+
+            /// Base translation: 使用支持「拷贝」的解码器
+            public static var UseCopy : String { return  "Alert.FilterHwdec.UseCopy".localized }
+
+            /// Base translation: 你正在添加视频滤镜。然而，当前的硬件解码器不能很好地支持视频滤镜。你可以禁用硬件解码，或使用支持「拷贝」的解码器 (将占用两倍内存)。 你可能需要再操作一次（例如剪切）才能看到效果。
+            public static var Message : String { return  "Alert.FilterHwdec.Message".localized }
+
+            /// Base translation: 放弃
+            public static var Abort : String { return  "Alert.FilterHwdec.Abort".localized }
+
+            /// Base translation: 关闭硬件解码
+            public static var TurnOff : String { return  "Alert.FilterHwdec.TurnOff".localized }
+
+        }
+
+        public class ChooseMediaFile {
+
+            /// Base translation: 选择媒体文件
+            public static var Title : String { return  "Alert.ChooseMediaFile.Title".localized }
 
         }
     }
 
     public class KeyRecord {
 
-        /// Base translation: 快速鍵...
+        /// Base translation: 媒体键…
         public static var MediaKeys : String { return  "KeyRecord.MediaKeys".localized }
 
-        /// Base translation: 手動
+        /// Base translation: 。
         public static var ManuallyPoint : String { return  "KeyRecord.ManuallyPoint".localized }
 
-        /// Base translation: 指令:
+        /// Base translation: 命令:
         public static var Action : String { return  "KeyRecord.Action".localized }
 
-        /// Base translation: 請選擇
+        /// Base translation: 你需要手动选择
         public static var YouNeedToChoose : String { return  "KeyRecord.YouNeedToChoose".localized }
 
     }
 
     public class PrefGeneral {
 
-        /// Base translation: 外觀:
-        public static var Appearance : String { return  "PrefGeneral.Appearance".localized }
-
-        /// Base translation: 半淺色
-        public static var MediumLight : String { return  "PrefGeneral.MediumLight".localized }
-
-        /// Base translation: 播放完畢後保持視窗打開
-        public static var KeepWindowOpenAfterPlaybackFinishes : String { return  "PrefGeneral.KeepWindowOpenAfterPlaybackFinishes".localized }
-
-        /// Base translation: 記錄:
-        public static var History : String { return  "PrefGeneral.History".localized }
-
-        /// Base translation: 需重啟 Leaf 方可生效
+        /// Base translation: 重启 Leaf 后生效。
         public static var RequiresRestartingLeafToTakeEffectPoint : String { return  "PrefGeneral.RequiresRestartingLeafToTakeEffectPoint".localized }
 
-        /// Base translation: 啟用播放記錄
-        public static var EnablePlaybackHistory : String { return  "PrefGeneral.EnablePlaybackHistory".localized }
+        /// Base translation: 打开媒体时:
+        public static var WhenMediaOpened : String { return  "PrefGeneral.WhenMediaOpened".localized }
 
-        /// Base translation: 顯示歡迎視窗
-        public static var ShowWelcomeWindow : String { return  "PrefGeneral.ShowWelcomeWindow".localized }
+        /// Base translation: 主题:
+        public static var Theme : String { return  "PrefGeneral.Theme".localized }
 
-        /// Base translation: 總是在新視窗開啟檔案
-        public static var AlwaysOpenMediaInNewWindow : String { return  "PrefGeneral.AlwaysOpenMediaInNewWindow".localized }
-
-        /// Base translation: 暫停
-        public static var Pause : String { return  "PrefGeneral.Pause".localized }
-
-        /// Base translation: 無
-        public static var DoNothing : String { return  "PrefGeneral.DoNothing".localized }
-
-        /// Base translation: 熒幕截取路徑
-        public static var PathToScreenshotFolder : String { return  "PrefGeneral.PathToScreenshotFolder".localized }
-
-        /// Base translation: 播放列表:
-        public static var Playlist : String { return  "PrefGeneral.Playlist".localized }
-
-        /// Base translation: 格式:
-        public static var Format : String { return  "PrefGeneral.Format".localized }
-
-        /// Base translation: 深黑色
-        public static var UltraDark : String { return  "PrefGeneral.UltraDark".localized }
-
-        /// Base translation: 截圖:
-        public static var Screenshots : String { return  "PrefGeneral.Screenshots".localized }
-
-        /// Base translation: 顯示開啟檔案對話方塊
-        public static var ShowOpenFilePanel : String { return  "PrefGeneral.ShowOpenFilePanel".localized }
-
-        /// Base translation: 當全熒幕播放時關熄其餘熒幕
+        /// Base translation: 全屏播放时使其他屏幕黑屏
         public static var BlackOutOtherMonitorsWhileInFullScreen : String { return  "PrefGeneral.BlackOutOtherMonitorsWhileInFullScreen".localized }
-
-        /// Base translation: 記錄最近打開的檔案
-        public static var EnableOpenRecentMenu : String { return  "PrefGeneral.EnableOpenRecentMenu".localized }
-
-        /// Base translation: 自動恢復上次播放位置
-        public static var ResumeLastPlaybackPosition : String { return  "PrefGeneral.ResumeLastPlaybackPosition".localized }
 
         /// Base translation: 包括字幕
         public static var IncludeSubtitles : String { return  "PrefGeneral.IncludeSubtitles".localized }
 
-        /// Base translation: 自動添加檔案至當前檔案夾
-        public static var AddFilesInTheSameFolderAutomatically : String { return  "PrefGeneral.AddFilesInTheSameFolderAutomatically".localized }
+        /// Base translation: 启用「最近打开」菜单
+        public static var EnableOpenRecentMenu : String { return  "PrefGeneral.EnableOpenRecentMenu".localized }
 
-        /// Base translation: 存儲爲
-        public static var SaveTo : String { return  "PrefGeneral.SaveTo".localized }
-
-        /// Base translation: 若否，則僅手動打開的檔案會顯示於此菜單中
-        public static var OtherwiseOnlyFilesThatOpenedManuallyWillShowUpInThisMenuPoint : String { return  "PrefGeneral.OtherwiseOnlyFilesThatOpenedManuallyWillShowUpInThisMenuPoint".localized }
-
-        /// Base translation: 啟動後:
-        public static var WhenLaunched : String { return  "PrefGeneral.WhenLaunched".localized }
-
-        /// Base translation: 主題:
-        public static var Theme : String { return  "PrefGeneral.Theme".localized }
-
-        /// Base translation: 進入全熒幕
-        public static var EnterFullscreen : String { return  "PrefGeneral.EnterFullscreen".localized }
-
-        /// Base translation: 自動播放下一個
-        public static var PlayNextItemAutomatically : String { return  "PrefGeneral.PlayNextItemAutomatically".localized }
-
-        /// Base translation: 深色
-        public static var Dark : String { return  "PrefGeneral.Dark".localized }
-
-        /// Base translation: 行爲:
-        public static var Behavior : String { return  "PrefGeneral.Behavior".localized }
-
-        /// Base translation: 淺色
-        public static var Light : String { return  "PrefGeneral.Light".localized }
-
-        /// Base translation: 在「最近打開」菜單中查看所有播放過的檔案
+        /// Base translation: 将所有播放过的文件加入「最近打开」菜单
         public static var TrackAllPlayedFilesInOpenRecentMenu : String { return  "PrefGeneral.TrackAllPlayedFilesInOpenRecentMenu".localized }
 
-        /// Base translation: 沒有打開的視窗時退出
+        /// Base translation: 自动播放播放列表中下一个项目
+        public static var PlayNextItemAutomatically : String { return  "PrefGeneral.PlayNextItemAutomatically".localized }
+
+        /// Base translation: 自动恢复上次播放进度
+        public static var ResumeLastPlaybackPosition : String { return  "PrefGeneral.ResumeLastPlaybackPosition".localized }
+
+        /// Base translation: 启动后:
+        public static var WhenLaunched : String { return  "PrefGeneral.WhenLaunched".localized }
+
+        /// Base translation: 显示打开文件对话框
+        public static var ShowOpenFilePanel : String { return  "PrefGeneral.ShowOpenFilePanel".localized }
+
+        /// Base translation: 启用播放历史
+        public static var EnablePlaybackHistory : String { return  "PrefGeneral.EnablePlaybackHistory".localized }
+
+        /// Base translation: Medium Light
+        public static var MediumLight : String { return  "PrefGeneral.MediumLight".localized }
+
+        /// Base translation: 显示欢迎窗口
+        public static var ShowWelcomeWindow : String { return  "PrefGeneral.ShowWelcomeWindow".localized }
+
+        /// Base translation: 无
+        public static var DoNothing : String { return  "PrefGeneral.DoNothing".localized }
+
+        /// Base translation: 播放完成后保持窗口打开
+        public static var KeepWindowOpenAfterPlaybackFinishes : String { return  "PrefGeneral.KeepWindowOpenAfterPlaybackFinishes".localized }
+
+        /// Base translation: 播放列表:
+        public static var Playlist : String { return  "PrefGeneral.Playlist".localized }
+
+        /// Base translation: Ultra Dark
+        public static var UltraDark : String { return  "PrefGeneral.UltraDark".localized }
+
+        /// Base translation: Dark
+        public static var Dark : String { return  "PrefGeneral.Dark".localized }
+
+        /// Base translation: 自动检查更新
+        public static var CheckForUpdates : String { return  "PrefGeneral.CheckForUpdates".localized }
+
+        /// Base translation: 格式:
+        public static var Format : String { return  "PrefGeneral.Format".localized }
+
+        /// Base translation: 进入全屏
+        public static var EnterFullscreen : String { return  "PrefGeneral.EnterFullscreen".localized }
+
+        /// Base translation: PNG
+        public static var PNG : String { return  "PrefGeneral.PNG".localized }
+
+        /// Base translation: 保存至
+        public static var SaveTo : String { return  "PrefGeneral.SaveTo".localized }
+
+        /// Base translation: 没有打开的窗口时退出
         public static var QuitAfterAllWindowsAreClosed : String { return  "PrefGeneral.QuitAfterAllWindowsAreClosed".localized }
 
-    }
+        /// Base translation: 外观:
+        public static var Appearance : String { return  "PrefGeneral.Appearance".localized }
 
-    public class About {
+        /// Base translation: 每周
+        public static var Weekly : String { return  "PrefGeneral.Weekly".localized }
 
-        /// Base translation: Leaf
-        public static var Leaf : String { return  "About.Leaf".localized }
+        /// Base translation: Light
+        public static var Light : String { return  "PrefGeneral.Light".localized }
 
-        /// Base translation: 0.0.1
-        public static var ZeroPointZeroPointOne : String { return  "About.ZeroPointZeroPointOne".localized }
+        /// Base translation: 否则该菜单只记录手动打开的文件
+        public static var OtherwiseOnlyFilesThatOpenedManuallyWillShowUpInThisMenuPoint : String { return  "PrefGeneral.OtherwiseOnlyFilesThatOpenedManuallyWillShowUpInThisMenuPoint".localized }
 
-        /// Base translation: 關於
-        public static var Window : String { return  "About.Window".localized }
+        /// Base translation: 每小时
+        public static var Hourly : String { return  "PrefGeneral.Hourly".localized }
+
+        /// Base translation: 使用 10.6 前的旧式全屏
+        public static var UseLegacyFullScreen : String { return  "PrefGeneral.UseLegacyFullScreen".localized }
+
+        /// Base translation: 每月
+        public static var Monthly : String { return  "PrefGeneral.Monthly".localized }
+
+        /// Base translation: 每天
+        public static var Daily : String { return  "PrefGeneral.Daily".localized }
+
+        /// Base translation: 自动添加同文件夹中的其他视频
+        public static var AddFilesInTheSameFolderAutomatically : String { return  "PrefGeneral.AddFilesInTheSameFolderAutomatically".localized }
+
+        /// Base translation: JPEG (.jpg)
+        public static var JPEGPointjpg : String { return  "PrefGeneral.JPEGPointjpg".localized }
+
+        /// Base translation: 历史:
+        public static var History : String { return  "PrefGeneral.History".localized }
+
+        /// Base translation: 截图:
+        public static var Screenshots : String { return  "PrefGeneral.Screenshots".localized }
+
+        /// Base translation: 行为:
+        public static var Behavior : String { return  "PrefGeneral.Behavior".localized }
+
+        /// Base translation: /path/to/screenshot/folder
+        public static var PathToScreenshotFolder : String { return  "PrefGeneral.PathToScreenshotFolder".localized }
+
+        /// Base translation: 总是在新窗口打开文件
+        public static var AlwaysOpenMediaInNewWindow : String { return  "PrefGeneral.AlwaysOpenMediaInNewWindow".localized }
+
+        /// Base translation: JPEG (.jpeg)
+        public static var JPEGPointjpeg : String { return  "PrefGeneral.JPEGPointjpeg".localized }
+
+        /// Base translation: 暂停
+        public static var Pause : String { return  "PrefGeneral.Pause".localized }
 
     }
 
     public class General {
 
+        /// Base translation: 退出
+        public static var Logout : String { return  "General.Logout".localized }
+
+        /// Base translation: 用户名
+        public static var Username : String { return  "General.Username".localized }
+
+        /// Base translation: Off
+        public static var Off : String { return  "General.Off".localized }
+
+        /// Base translation: 登录
+        public static var Login : String { return  "General.Login".localized }
+
+        /// Base translation: On
+        public static var On : String { return  "General.On".localized }
+
         /// Base translation: 取消
         public static var Cancel : String { return  "General.Cancel".localized }
 
-        /// Base translation: 用戶名
-        public static var Username : String { return  "General.Username".localized }
-
-        /// Base translation: 關
-        public static var Off : String { return  "General.Off".localized }
-
-        /// Base translation: 登入
-        public static var Login : String { return  "General.Login".localized }
-
-        /// Base translation: 開
-        public static var On : String { return  "General.On".localized }
-
-        /// Base translation: 登出
-        public static var Logout : String { return  "General.Logout".localized }
-
-        /// Base translation: 密鑰
+        /// Base translation: 密码
         public static var Password : String { return  "General.Password".localized }
 
         /// Base translation: 好
@@ -1338,186 +1385,12 @@ public class I18N {
 
     }
 
-    public class PrefCodec {
-
-        /// Base translation: S/PDIF 輸出:
-        public static var SPDIFOutput : String { return  "PrefCodec.SPDIFOutput".localized }
-
-        /// Base translation: 視訊:
-        public static var Video : String { return  "PrefCodec.Video".localized }
-
-        /// Base translation: 線程數:
-        public static var NumberOfThreads : String { return  "PrefCodec.NumberOfThreads".localized }
-
-        /// Base translation: 音訊:
-        public static var Audio : String { return  "PrefCodec.Audio".localized }
-
-        /// Base translation: 最大音量:
-        public static var MaximumVolume : String { return  "PrefCodec.MaximumVolume".localized }
-
-        /// Base translation: 禁用
-        public static var Disabled : String { return  "PrefCodec.Disabled".localized }
-
-        /// Base translation: 硬體解碼器:
-        public static var HardwareDecoder : String { return  "PrefCodec.HardwareDecoder".localized }
-
-        /// Base translation: 偏好語言:
-        public static var PreferedLanguage : String { return  "PrefCodec.PreferedLanguage".localized }
-
-        /// Base translation: 默認: 0 (自動)
-        public static var DefaultZeroAuto : String { return  "PrefCodec.DefaultZeroAuto".localized }
-
-        /// Base translation: 自動
-        public static var Auto : String { return  "PrefCodec.Auto".localized }
-
-        /// Base translation: 自動 (拷貝)
-        public static var AutoCopy : String { return  "PrefCodec.AutoCopy".localized }
-
-    }
-
-    public class PrefSub {
-
-        /// Base translation: 全熒幕時在方框內顯示字幕
-        public static var DisplaySubtitlesInLetterboxesWhileInFullScreen : String { return  "PrefSub.DisplaySubtitlesInLetterboxesWhileInFullScreen".localized }
-
-        /// Base translation: 在以下目錄中也查找字幕:
-        public static var AlsoSearchSubtitlesInFollowingDirectories : String { return  "PrefSub.AlsoSearchSubtitlesInFollowingDirectories".localized }
-
-        /// Base translation: 包含媒體文件名的字幕
-        public static var SubtitlesContainingMediaFilename : String { return  "PrefSub.SubtitlesContainingMediaFilename".localized }
-
-        /// Base translation: 選擇...
-        public static var Choose : String { return  "PrefSub.Choose".localized }
-
-        /// Base translation: 覆蓋等級:
-        public static var OverrideLevel : String { return  "PrefSub.OverrideLevel".localized }
-
-        /// Base translation: 對齊
-        public static var Align : String { return  "PrefSub.Align".localized }
-
-        /// Base translation: 背景:
-        public static var Background : String { return  "PrefSub.Background".localized }
-
-        /// Base translation: 根據窗體大小自動調整字幕
-        public static var ScaleSubtitlesWithWindowSize : String { return  "PrefSub.ScaleSubtitlesWithWindowSize".localized }
-
-        /// Base translation: 由 Leaf 智能選擇
-        public static var DetectIntelligentlyByLeaf : String { return  "PrefSub.DetectIntelligentlyByLeaf".localized }
-
-        /// Base translation: 中間
-        public static var Center : String { return  "PrefSub.Center".localized }
-
-        /// Base translation: 陰影
-        public static var Shadow : String { return  "PrefSub.Shadow".localized }
-
-        /// Base translation: 這將導致 ASS 字幕使用以下設定渲染。
-        public static var IfEnabledAllASSSubtitlesWillBeDrawnUsingTheStylesBelowPoint : String { return  "PrefSub.IfEnabledAllASSSubtitlesWillBeDrawnUsingTheStylesBelowPoint".localized }
-
-        /// Base translation: 大小:
-        public static var Size : String { return  "PrefSub.Size".localized }
-
-        /// Base translation: 文本字幕:
-        public static var TextSubtitles : String { return  "PrefSub.TextSubtitles".localized }
-
-        /// Base translation: 優先加載文件名含有以下字符串的字幕:
-        public static var SubtitlesHavePriorityWhenFilenameContaining : String { return  "PrefSub.SubtitlesHavePriorityWhenFilenameContaining".localized }
-
-        /// Base translation: 顏色:
-        public static var Color : String { return  "PrefSub.Color".localized }
-
-        /// Base translation: 忽略所有 ASS 樣式
-        public static var IgnoreASSStyles : String { return  "PrefSub.IgnoreASSStyles".localized }
-
-        /// Base translation: OpenSubtitles 帳戶:
-        public static var OpenSubtitlesAccount : String { return  "PrefSub.OpenSubtitlesAccount".localized }
-
-        /// Base translation: ASS 字幕:
-        public static var ASSSubtitles : String { return  "PrefSub.ASSSubtitles".localized }
-
-        /// Base translation: 右
-        public static var Right : String { return  "PrefSub.Right".localized }
-
-        /// Base translation: 禁用
-        public static var Disabled : String { return  "PrefSub.Disabled".localized }
-
-        /// Base translation: 模糊:
-        public static var Blur : String { return  "PrefSub.Blur".localized }
-
-        /// Base translation: 頂端
-        public static var Top : String { return  "PrefSub.Top".localized }
-
-        /// Base translation: 邊框
-        public static var Border : String { return  "PrefSub.Border".localized }
-
-        /// Base translation:  X:
-        public static var X : String { return  "PrefSub.X".localized }
-
-        /// Base translation: 字體
-        public static var Font : String { return  "PrefSub.Font".localized }
-
-        /// Base translation: 字間距:
-        public static var FontSpacing : String { return  "PrefSub.FontSpacing".localized }
-
-        /// Base translation: Y:
-        public static var Y : String { return  "PrefSub.Y".localized }
-
-        /// Base translation: 偏移:
-        public static var Offset : String { return  "PrefSub.Offset".localized }
-
-        /// Base translation: 從...下載字幕:
-        public static var DownloadSubtitlesFrom : String { return  "PrefSub.DownloadSubtitlesFrom".localized }
-
-        /// Base translation: 該設定將以ISO 639-2 字符集儲存，兼容於 mpv 和 OpenSubtitles
-        public static var ThisOptionWillBeStoredAsISOSixThreeNineTwoLanguageCodeAndWillWorksForBothMpvAndOpensubtitlesPoint : String { return  "PrefSub.ThisOptionWillBeStoredAsISOSixThreeNineTwoLanguageCodeAndWillWorksForBothMpvAndOpensubtitlesPoint".localized }
-
-        /// Base translation: 豎直位置:
-        public static var VerticalPosition : String { return  "PrefSub.VerticalPosition".localized }
-
-        /// Base translation: 位置:
-        public static var Position : String { return  "PrefSub.Position".localized }
-
-        /// Base translation: 請輸入一系列逗號分隔的字符串。
-        public static var PleaseEnterACommaSeparatedListOfStringsPoint : String { return  "PrefSub.PleaseEnterACommaSeparatedListOfStringsPoint".localized }
-
-        /// Base translation: 左
-        public static var Left : String { return  "PrefSub.Left".localized }
-
-        /// Base translation: 底部
-        public static var Bottom : String { return  "PrefSub.Bottom".localized }
-
-        /// Base translation: 其他:
-        public static var Other : String { return  "PrefSub.Other".localized }
-
-        /// Base translation: 各路徑由冒號 (:) 分隔。允許相對路徑和結尾的通配符 (*)。
-        public static var DirectoriesAreSeparatedByColonsPointRelativePathsAndWildcards_AtTheEndAreAllowedPoint : String { return  "PrefSub.DirectoriesAreSeparatedByColonsPointRelativePathsAndWildcards*AtTheEndAreAllowedPoint".localized }
-
-        /// Base translation: 無襯線
-        public static var SansSerif : String { return  "PrefSub.SansSerif".localized }
-
-        /// Base translation: 邊距
-        public static var Margin : String { return  "PrefSub.Margin".localized }
-
-        /// Base translation: 偏好語言:
-        public static var PreferedLanguage : String { return  "PrefSub.PreferedLanguage".localized }
-
-        /// Base translation: 自動加載:
-        public static var AutoLoad : String { return  "PrefSub.AutoLoad".localized }
-
-    }
-
-    public class Track {
-
-        /// Base translation: <無>
-        public static var None : String { return  "Track.None".localized }
-
-    }
-
     public class Initial {
 
-        /// Base translation: Label
-        public static var Label : String { return  "Initial.Label".localized }
+        /// Base translation: Table View Cell
+        public static var TableViewCell : String { return  "Initial.TableViewCell".localized }
 
-        /// Base translation: 打開…
+        /// Base translation: 打开…
         public static var Open : String { return  "Initial.Open".localized }
 
         /// Base translation: ⌘O
@@ -1529,158 +1402,376 @@ public class I18N {
         /// Base translation: ⇧⌘O
         public static var __O : String { return  "Initial.⇧⌘O".localized }
 
-        /// Base translation: 打開 URL…
+        /// Base translation: 打开 URL…
         public static var OpenURL : String { return  "Initial.OpenURL".localized }
 
         /// Base translation: Leaf
         public static var Leaf : String { return  "Initial.Leaf".localized }
 
-        /// Base translation: Table View Cell
-        public static var TableViewCell : String { return  "Initial.TableViewCell".localized }
+        /// Base translation: Label
+        public static var Label : String { return  "Initial.Label".localized }
+
+    }
+
+    public class PrefCodec {
+
+        /// Base translation: 禁用
+        public static var Disabled : String { return  "PrefCodec.Disabled".localized }
+
+        /// Base translation: 视频:
+        public static var Video : String { return  "PrefCodec.Video".localized }
+
+        /// Base translation: 线程数:
+        public static var NumberOfThreads : String { return  "PrefCodec.NumberOfThreads".localized }
+
+        /// Base translation: S/PDIF 输出:
+        public static var SPDIFOutput : String { return  "PrefCodec.SPDIFOutput".localized }
+
+        /// Base translation: 最大音量:
+        public static var MaximumVolume : String { return  "PrefCodec.MaximumVolume".localized }
+
+        /// Base translation: 硬件解码器:
+        public static var HardwareDecoder : String { return  "PrefCodec.HardwareDecoder".localized }
+
+        /// Base translation: 偏好语言:
+        public static var PreferedLanguage : String { return  "PrefCodec.PreferedLanguage".localized }
+
+        /// Base translation: 自动 (拷贝)
+        public static var AutoCopy : String { return  "PrefCodec.AutoCopy".localized }
+
+        /// Base translation: 音频:
+        public static var Audio : String { return  "PrefCodec.Audio".localized }
+
+        /// Base translation: 默认: 0 (自动)
+        public static var DefaultZeroAuto : String { return  "PrefCodec.DefaultZeroAuto".localized }
+
+        /// Base translation: 自动
+        public static var Auto : String { return  "PrefCodec.Auto".localized }
+
+        /// Base translation: 固定初始音量
+        public static var InitialVolume : String { return  "PrefCodec.InitialVolume".localized }
+
+    }
+
+    public class PrefSub {
+
+        /// Base translation: 全屏时将字幕显示在黑边
+        public static var DisplaySubtitlesInLetterboxesWhileInFullScreen : String { return  "PrefSub.DisplaySubtitlesInLetterboxesWhileInFullScreen".localized }
+
+        /// Base translation: 在以下目录中也查找字幕:
+        public static var AlsoSearchSubtitlesInFollowingDirectories : String { return  "PrefSub.AlsoSearchSubtitlesInFollowingDirectories".localized }
+
+        /// Base translation: 包含媒体文件名的字幕
+        public static var SubtitlesContainingMediaFilename : String { return  "PrefSub.SubtitlesContainingMediaFilename".localized }
+
+        /// Base translation: 选择…
+        public static var Choose : String { return  "PrefSub.Choose".localized }
+
+        /// Base translation: 覆盖等级
+        public static var OverrideLevel : String { return  "PrefSub.OverrideLevel".localized }
+
+        /// Base translation: 对齐
+        public static var Align : String { return  "PrefSub.Align".localized }
+
+        /// Base translation: 背景:
+        public static var Background : String { return  "PrefSub.Background".localized }
+
+        /// Base translation: 字幕大小随窗口缩放
+        public static var ScaleSubtitlesWithWindowSize : String { return  "PrefSub.ScaleSubtitlesWithWindowSize".localized }
+
+        /// Base translation: 由 Leaf 智能选择
+        public static var DetectIntelligentlyByLeaf : String { return  "PrefSub.DetectIntelligentlyByLeaf".localized }
+
+        /// Base translation: 中间
+        public static var Center : String { return  "PrefSub.Center".localized }
+
+        /// Base translation: 阴影
+        public static var Shadow : String { return  "PrefSub.Shadow".localized }
+
+        /// Base translation: 这将导致 ASS 字幕使用以下设置渲染。
+        public static var IfEnabledAllASSSubtitlesWillBeDrawnUsingTheStylesBelowPoint : String { return  "PrefSub.IfEnabledAllASSSubtitlesWillBeDrawnUsingTheStylesBelowPoint".localized }
+
+        /// Base translation: 大小:
+        public static var Size : String { return  "PrefSub.Size".localized }
+
+        /// Base translation: 文本字幕:
+        public static var TextSubtitles : String { return  "PrefSub.TextSubtitles".localized }
+
+        /// Base translation: 优先加载文件名含有以下字符串的字幕:
+        public static var SubtitlesHavePriorityWhenFilenameContaining : String { return  "PrefSub.SubtitlesHavePriorityWhenFilenameContaining".localized }
+
+        /// Base translation: 颜色:
+        public static var Color : String { return  "PrefSub.Color".localized }
+
+        /// Base translation: 忽略所有 ASS 样式
+        public static var IgnoreASSStyles : String { return  "PrefSub.IgnoreASSStyles".localized }
+
+        /// Base translation: OpenSubtitles 账户:
+        public static var OpenSubtitlesAccount : String { return  "PrefSub.OpenSubtitlesAccount".localized }
+
+        /// Base translation: ASS 字幕:
+        public static var ASSSubtitles : String { return  "PrefSub.ASSSubtitles".localized }
+
+        /// Base translation: 在线字幕:
+        public static var OnlineSubtitles : String { return  "PrefSub.OnlineSubtitles".localized }
+
+        /// Base translation: 右
+        public static var Right : String { return  "PrefSub.Right".localized }
+
+        /// Base translation: 禁用
+        public static var Disabled : String { return  "PrefSub.Disabled".localized }
+
+        /// Base translation: 模糊:
+        public static var Blur : String { return  "PrefSub.Blur".localized }
+
+        /// Base translation: 顶端
+        public static var Top : String { return  "PrefSub.Top".localized }
+
+        /// Base translation: 通用
+        public static var General : String { return  "PrefSub.General".localized }
+
+        /// Base translation: 边框
+        public static var Border : String { return  "PrefSub.Border".localized }
+
+        /// Base translation:  X:
+        public static var X : String { return  "PrefSub.X".localized }
+
+        /// Base translation: 字体
+        public static var Font : String { return  "PrefSub.Font".localized }
+
+        /// Base translation: 字间距:
+        public static var FontSpacing : String { return  "PrefSub.FontSpacing".localized }
+
+        /// Base translation: Y:
+        public static var Y : String { return  "PrefSub.Y".localized }
+
+        /// Base translation: 偏移:
+        public static var Offset : String { return  "PrefSub.Offset".localized }
+
+        /// Base translation: 自动下载字幕来源:
+        public static var DownloadSubtitlesFrom : String { return  "PrefSub.DownloadSubtitlesFrom".localized }
+
+        /// Base translation: 此选项将会被保存为 ISO 639-2 格式，并同时对 mpv 和 OpenSubtitles 生效。
+        public static var ThisOptionWillBeStoredAsISOSixThreeNineTwoLanguageCodeAndWillWorksForBothMpvAndOpensubtitlesPoint : String { return  "PrefSub.ThisOptionWillBeStoredAsISOSixThreeNineTwoLanguageCodeAndWillWorksForBothMpvAndOpensubtitlesPoint".localized }
+
+        /// Base translation: 垂直位置:
+        public static var VerticalPosition : String { return  "PrefSub.VerticalPosition".localized }
+
+        /// Base translation: 位置:
+        public static var Position : String { return  "PrefSub.Position".localized }
+
+        /// Base translation: 请输入一系列逗号分隔的字符串。
+        public static var PleaseEnterACommaSeparatedListOfStringsPoint : String { return  "PrefSub.PleaseEnterACommaSeparatedListOfStringsPoint".localized }
+
+        /// Base translation: 左
+        public static var Left : String { return  "PrefSub.Left".localized }
+
+        /// Base translation: 底部
+        public static var Bottom : String { return  "PrefSub.Bottom".localized }
+
+        /// Base translation: 各路径由冒号 (:) 分隔。允许相对路径和结尾的通配符 (*)。
+        public static var DirectoriesAreSeparatedByColonsPointRelativePathsAndWildcards_AtTheEndAreAllowedPoint : String { return  "PrefSub.DirectoriesAreSeparatedByColonsPointRelativePathsAndWildcards*AtTheEndAreAllowedPoint".localized }
+
+        /// Base translation: 默认编码:
+        public static var DefaultEncoding : String { return  "PrefSub.DefaultEncoding".localized }
+
+        /// Base translation: sans-serif
+        public static var SansSerif : String { return  "PrefSub.SansSerif".localized }
+
+        /// Base translation: 其他:
+        public static var Other : String { return  "PrefSub.Other".localized }
+
+        /// Base translation: 样式和位置
+        public static var StyleAndPosition : String { return  "PrefSub.StyleAndPosition".localized }
+
+        /// Base translation: 边距
+        public static var Margin : String { return  "PrefSub.Margin".localized }
+
+        /// Base translation: 偏好语言:
+        public static var PreferedLanguage : String { return  "PrefSub.PreferedLanguage".localized }
+
+        /// Base translation: 自动加载:
+        public static var AutoLoad : String { return  "PrefSub.AutoLoad".localized }
+
+    }
+
+    public class Track {
+
+        /// Base translation: <无>
+        public static var None : String { return  "Track.None".localized }
+
+    }
+
+    public class Subencoding {
+
+        /// Base translation: 自动识别
+        public static var Auto : String { return  "Subencoding.Auto".localized }
 
     }
 
     public class Hwdec {
 
-        /// Base translation: 啟用硬體解碼。它會佔用兩倍左右的記憶體，但支援視訊濾鏡。
+        /// Base translation: 启用硬件解码。它会占用两倍左右的内存，但支持视频滤镜。
         public static var AutoCopy : String { return  "Hwdec.AutoCopy".localized }
 
-        /// Base translation: 啟用硬體解碼。但是，大多數視訊濾鏡不會正常工作。
-        public static var Auto : String { return  "Hwdec.Auto".localized }
-
-        /// Base translation: 不啟用硬體解碼。
+        /// Base translation: 不启用硬件解码。
         public static var No : String { return  "Hwdec.No".localized }
+
+        /// Base translation: 启用硬件解码。但是，大多数视频滤镜不会正常工作。
+        public static var Auto : String { return  "Hwdec.Auto".localized }
 
     }
 
     public class Keymapping {
 
-        /// Base translation: 現在按鍵即可設定
+        /// Base translation: 请按任意键来开始录制。
         public static var Message : String { return  "Keymapping.Message".localized }
 
-        /// Base translation: 快速鍵
+        /// Base translation: 快捷键
         public static var Title : String { return  "Keymapping.Title".localized }
+
+    }
+
+    public class About {
+
+        /// Base translation: 关于
+        public static var Window : String { return  "About.Window".localized }
+
+        /// Base translation: 0.0.1
+        public static var ZeroPointZeroPointOne : String { return  "About.ZeroPointZeroPointOne".localized }
+
+        /// Base translation: mpv 0.0.0
+        public static var MpvZeroPointZeroPointZero : String { return  "About.MpvZeroPointZeroPointZero".localized }
+
+        /// Base translation: Leaf
+        public static var Leaf : String { return  "About.Leaf".localized }
 
     }
 
     public class Pref {
 
-        /// Base translation: 關鍵幀查找
+        /// Base translation: 关键帧查找
         public static var KeyframeSeek : String { return  "Pref.KeyframeSeek".localized }
 
-        /// Base translation: 隱藏播放控制
+        /// Base translation: 中键单击时:
+        public static var MiddleClickTo : String { return  "Pref.MiddleClickTo".localized }
+
+        /// Base translation: 隐藏播放控制
         public static var HideOSC : String { return  "Pref.HideOSC".localized }
 
-        /// Base translation: 點擊左/右鍵時
-        public static var UseLeftRightButtonFor : String { return  "Pref.UseLeftRightButtonFor".localized }
-
-        /// Base translation: 前進/後退量:
+        /// Base translation: 查找滚动灵敏度:
         public static var SensitivityForNormalSeek : String { return  "Pref.SensitivityForNormalSeek".localized }
 
-        /// Base translation: 調節視窗大小
-        public static var AdjustWindowSize : String { return  "Pref.AdjustWindowSize".localized }
+        /// Base translation: 单击鼠标时:
+        public static var SingleClickTo : String { return  "Pref.SingleClickTo".localized }
 
-        /// Base translation: 無
+        /// Base translation: 无
         public static var None : String { return  "Pref.None".localized }
 
-        /// Base translation: 精確查找
+        /// Base translation: 右键单击时:
+        public static var RightClickTo : String { return  "Pref.RightClickTo".localized }
+
+        /// Base translation: 精确查找
         public static var ExactSeek : String { return  "Pref.ExactSeek".localized }
 
-        /// Base translation: 橫向滾動時:
-        public static var SeekType : String { return  "Pref.SeekType".localized }
+        /// Base translation: 速度调整
+        public static var Speed : String { return  "Pref.Speed".localized }
 
-        /// Base translation: 豎直捲動:
+        /// Base translation: 纵向滚动时:
         public static var ScrollVerticallyTo : String { return  "Pref.ScrollVerticallyTo".localized }
+
+        /// Base translation: 点击左/右键时
+        public static var UseLeftRightButtonFor : String { return  "Pref.UseLeftRightButtonFor".localized }
+
+        /// Base translation: Force Touch 时:
+        public static var ForceTouchTo : String { return  "Pref.ForceTouchTo".localized }
+
+        /// Base translation: 缩放窗口
+        public static var AdjustWindowSize : String { return  "Pref.AdjustWindowSize".localized }
 
         /// Base translation: 查找
         public static var Seek : String { return  "Pref.Seek".localized }
 
-        /// Base translation: 調節音量
-        public static var AdjustVolume : String { return  "Pref.AdjustVolume".localized }
+        /// Base translation: 查找方法:
+        public static var SeekType : String { return  "Pref.SeekType".localized }
 
-        /// Base translation: 音量調節靈敏度:
+        /// Base translation: 音量滚动灵敏度:
         public static var SensitivityForVolume : String { return  "Pref.SensitivityForVolume".localized }
 
-        /// Base translation: 自動
+        /// Base translation: 调整音量
+        public static var AdjustVolume : String { return  "Pref.AdjustVolume".localized }
+
+        /// Base translation: 自动
         public static var Auto : String { return  "Pref.Auto".localized }
 
-        /// Base translation: 單擊滑鼠時:
-        public static var SingleClickTo : String { return  "Pref.SingleClickTo".localized }
-
-        /// Base translation: 右鍵單擊時:
-        public static var RightClickTo : String { return  "Pref.RightClickTo".localized }
-
-        /// Base translation: 速度
-        public static var Speed : String { return  "Pref.Speed".localized }
-
-        /// Base translation: 上一個 / 下一個
+        /// Base translation: 上一个 / 下一个
         public static var PreviousNextMedia : String { return  "Pref.PreviousNextMedia".localized }
 
-        /// Base translation: 切換至全熒幕
+        /// Base translation: 切换全屏
         public static var ToggleFullscreen : String { return  "Pref.ToggleFullscreen".localized }
 
-        /// Base translation: 精確查找過大檔案將十分耗費 CPU 並導致卡頓
+        /// Base translation: 精确查找对于大文件会消耗大量 CPU 并导致卡顿
         public static var ExactSeekIsMorePreciseButCanCauseLagAndHigherCPUUsagePoint : String { return  "Pref.ExactSeekIsMorePreciseButCanCauseLagAndHigherCPUUsagePoint".localized }
 
-        /// Base translation: 暫停 / 繼續
+        /// Base translation: 暂停 / 继续
         public static var PauseResume : String { return  "Pref.PauseResume".localized }
 
-        /// Base translation: 全熒幕
+        /// Base translation: 切换全屏
         public static var Fullscreen : String { return  "Pref.Fullscreen".localized }
 
-        /// Base translation: 兩指縮放:
+        /// Base translation: 双指缩放时:
         public static var PinchTo : String { return  "Pref.PinchTo".localized }
 
-        /// Base translation: 雙擊滑鼠:
+        /// Base translation: 双击鼠标时:
         public static var DoubleClickTo : String { return  "Pref.DoubleClickTo".localized }
 
-        /// Base translation: 水平捲動:
+        /// Base translation: 横向滚动时:
         public static var ScrollHorizontallyTo : String { return  "Pref.ScrollHorizontallyTo".localized }
 
-        /// Base translation: 前進 / 後退
+        /// Base translation: 前进 / 后退
         public static var FastforwardRewind : String { return  "Pref.FastforwardRewind".localized }
 
     }
 
     public class Preference {
 
-        /// Base translation: 未登入
-        public static var NotLoggedIn : String { return  "Preference.NotLoggedIn".localized }
+        /// Base translation: 字幕
+        public static var Subtitle : String { return  "Preference.Subtitle".localized }
 
         /// Base translation: 控制
         public static var Control : String { return  "Preference.Control".localized }
 
-        /// Base translation: 編碼
+        /// Base translation: 解码
         public static var Codec : String { return  "Preference.Codec".localized }
 
-        /// Base translation: 以 %@ 登入
+        /// Base translation: 已登录 %@
         public static func LoggedInAs(value1 : String) -> String {
             return String(format: I18N.bundle.localizedString(forKey: "Preference.LoggedInAs", value: nil, table: nil), value1)
         }
 
-        /// Base translation: 一般
+        /// Base translation: 通用
         public static var General : String { return  "Preference.General".localized }
 
-        /// Base translation: 高級
+        /// Base translation: 高级
         public static var Advanced : String { return  "Preference.Advanced".localized }
 
         /// Base translation: UI
         public static var Ui : String { return  "Preference.Ui".localized }
 
-        /// Base translation: 腳本
-        public static var Scripts : String { return  "Preference.Scripts".localized }
-
-        /// Base translation: 快速鍵
-        public static var Keybindings : String { return  "Preference.Keybindings".localized }
-
-        /// Base translation: 網路
-        public static var Network : String { return  "Preference.Network".localized }
-
-        /// Base translation: 偏好
+        /// Base translation: 偏好设置
         public static var Title : String { return  "Preference.Title".localized }
 
-        /// Base translation: 字幕
-        public static var Subtitle : String { return  "Preference.Subtitle".localized }
+        /// Base translation: 脚本
+        public static var Scripts : String { return  "Preference.Scripts".localized }
+
+        /// Base translation: 网络
+        public static var Network : String { return  "Preference.Network".localized }
+
+        /// Base translation: 快捷键
+        public static var Keybindings : String { return  "Preference.Keybindings".localized }
+
+        /// Base translation: 未登录
+        public static var NotLoggedIn : String { return  "Preference.NotLoggedIn".localized }
 
     }
 
@@ -1702,268 +1793,317 @@ public class I18N {
 
     public class Inspector {
 
-        /// Base translation: 音畫異步:
+        /// Base translation: 音画同步矫正:
         public static var AVSyncDiff : String { return  "Inspector.AVSyncDiff".localized }
 
-        /// Base translation: 丢失幀:
+        /// Base translation: 丢帧:
         public static var DroppedFrames : String { return  "Inspector.DroppedFrames".localized }
 
-        /// Base translation: 檢視器
+        /// Base translation: 检查器
         public static var Window : String { return  "Inspector.Window".localized }
 
-        /// Base translation: 強制性
+        /// Base translation: 强制
         public static var Forced : String { return  "Inspector.Forced".localized }
 
-        /// Base translation: 總音畫同步:
+        /// Base translation: 总音画同步:
         public static var TotalAVSync : String { return  "Inspector.TotalAVSync".localized }
 
-        /// Base translation: 聲道:
+        /// Base translation: 声道:
         public static var Channels : String { return  "Inspector.Channels".localized }
 
-        /// Base translation: 語言:
+        /// Base translation: 语言:
         public static var Language : String { return  "Inspector.Language".localized }
 
-        /// Base translation: 版本:
+        /// Base translation: Text Cell
+        public static var TextCell : String { return  "Inspector.TextCell".localized }
+
+        /// Base translation: 集数:
         public static var Editions : String { return  "Inspector.Editions".localized }
 
-        /// Base translation: 幀率:
+        /// Base translation: FPS:
         public static var FPS : String { return  "Inspector.FPS".localized }
 
-        /// Base translation: 編碼:
+        /// Base translation: 编解码器:
         public static var Codec : String { return  "Inspector.Codec".localized }
 
-        /// Base translation: 採樣率:
+        /// Base translation: 采样率:
         public static var SampleRate : String { return  "Inspector.SampleRate".localized }
 
         /// Base translation: 大小:
         public static var Size : String { return  "Inspector.Size".localized }
 
-        /// Base translation: 驅動:
+        /// Base translation: 驱动:
         public static var Driver : String { return  "Inspector.Driver".localized }
 
-        /// Base translation: 已啟用
+        /// Base translation: 已选择
         public static var Selected : String { return  "Inspector.Selected".localized }
 
-        /// Base translation: 估算的熒幕幀率
+        /// Base translation: 显示 FPS（估算）
         public static var EstimatedDispFPS : String { return  "Inspector.EstimatedDispFPS".localized }
 
-        /// Base translation: 狀態
+        /// Base translation: 状态
         public static var Status : String { return  "Inspector.Status".localized }
 
-        /// Base translation: 時長:
+        /// Base translation: 视频
+        public static var VIDEO : String { return  "Inspector.VIDEO".localized }
+
+        /// Base translation: 时长:
         public static var Duration : String { return  "Inspector.Duration".localized }
 
-        /// Base translation: 章:
-        public static var Chapters : String { return  "Inspector.Chapters".localized }
-
-        /// Base translation: 一般
+        /// Base translation: 通用
         public static var General : String { return  "Inspector.General".localized }
 
-        /// Base translation: 錯位幀:
+        /// Base translation: 错位帧:
         public static var MistimedFrames : String { return  "Inspector.MistimedFrames".localized }
 
         /// Base translation: 格式:
         public static var Format : String { return  "Inspector.Format".localized }
 
-        /// Base translation: 屬性:
+        /// Base translation: 属性:
         public static var Properties : String { return  "Inspector.Properties".localized }
 
-        /// Base translation: 音訊
-        public static var AUDIO : String { return  "Inspector.AUDIO".localized }
+        /// Base translation: 章节数:
+        public static var Chapters : String { return  "Inspector.Chapters".localized }
 
-        /// Base translation: 硬體解碼:
+        /// Base translation: 硬件解码器:
         public static var HwDecoder : String { return  "Inspector.HwDecoder".localized }
 
-        /// Base translation: 檔案路徑:
+        /// Base translation: 文件路径:
         public static var FilePath : String { return  "Inspector.FilePath".localized }
 
-        /// Base translation: 檔案
+        /// Base translation: 文件
         public static var File : String { return  "Inspector.File".localized }
 
-        /// Base translation: 序列:
+        /// Base translation: ID:
         public static var ID : String { return  "Inspector.ID".localized }
 
-        /// Base translation: 軌:
+        /// Base translation: 轨道:
         public static var Track : String { return  "Inspector.Track".localized }
 
         /// Base translation: 比特率:
         public static var BitRate : String { return  "Inspector.BitRate".localized }
 
-        /// Base translation: 標識:
-        public static var Title : String { return  "Inspector.Title".localized }
-
-        /// Base translation: 默認
-        public static var Default : String { return  "Inspector.Default".localized }
-
-        /// Base translation: 軌
+        /// Base translation: 轨道
         public static var Tracks : String { return  "Inspector.Tracks".localized }
 
-        /// Base translation: 熒幕幀率:
+        /// Base translation: 默认
+        public static var Default : String { return  "Inspector.Default".localized }
+
+        /// Base translation: 音频
+        public static var AUDIO : String { return  "Inspector.AUDIO".localized }
+
+        /// Base translation: 显示 FPS:
         public static var DisplayFPS : String { return  "Inspector.DisplayFPS".localized }
 
-        /// Base translation: 視訊
-        public static var VIDEO : String { return  "Inspector.VIDEO".localized }
+        /// Base translation: 标题:
+        public static var Title : String { return  "Inspector.Title".localized }
 
-        /// Base translation: 估算的輸出幀率:
+        /// Base translation: 输出 FPS（估算）:
         public static var EstimatedOutputFPS : String { return  "Inspector.EstimatedOutputFPS".localized }
 
-        /// Base translation: 監視
+        /// Base translation: Multiline Label
+        public static var MultilineLabel : String { return  "Inspector.MultilineLabel".localized }
+
+        /// Base translation: 监视
         public static var Watch : String { return  "Inspector.Watch".localized }
 
-        /// Base translation: 源序列:
+        /// Base translation: 源文件 ID:
         public static var SourceID : String { return  "Inspector.SourceID".localized }
 
-        /// Base translation: 解碼器:
+        /// Base translation: 解码器:
         public static var Decoder : String { return  "Inspector.Decoder".localized }
 
-        /// Base translation: 加載檔
+        /// Base translation: 外部
         public static var External : String { return  "Inspector.External".localized }
+
+        /// Base translation: Label
+        public static var Label : String { return  "Inspector.Label".localized }
 
     }
 
-    public class PrefUI {
+    public class FreeSelecting {
 
-        /// Base translation: 字體大小:
-        public static var TextSize : String { return  "PrefUI.TextSize".localized }
+        /// Base translation: 取消
+        public static var Cancel : String { return  "FreeSelecting.Cancel".localized }
 
-        /// Base translation: 啟用縮圖預覽
-        public static var EnableThumbnailPreview : String { return  "PrefUI.EnableThumbnailPreview".localized }
+        /// Base translation: 拖拽来选择所需的区域。
+        public static var DragToSelectTheDesiredRegionPoint : String { return  "FreeSelecting.DragToSelectTheDesiredRegionPoint".localized }
 
-        /// Base translation: 懸浮
-        public static var Floating : String { return  "PrefUI.Floating".localized }
+        /// Base translation: 完成
+        public static var Done : String { return  "FreeSelecting.Done".localized }
 
-        /// Base translation: 計算中…
-        public static var Calculating : String { return  "PrefUI.Calculating".localized }
-
-        /// Base translation: 視窗:
-        public static var Window : String { return  "PrefUI.Window".localized }
-
-        /// Base translation: 播放控制:
-        public static var OnScreenController : String { return  "PrefUI.OnScreenController".localized }
-
-        /// Base translation: 拖動時吸附到窗口中心
-        public static var SnapToCenterWhenDragging : String { return  "PrefUI.SnapToCenterWhenDragging".localized }
-
-        /// Base translation: 位於頂部
-        public static var Top : String { return  "PrefUI.Top".localized }
-
-        /// Base translation: 自動隱藏:
-        public static var AutoHideAfter : String { return  "PrefUI.AutoHideAfter".localized }
-
-        /// Base translation: 僅在手動打開檔案時調整視窗大小
-        public static var ResizeToVideoSizeOnlyWhenOpeningFilesManually : String { return  "PrefUI.ResizeToVideoSizeOnlyWhenOpeningFilesManually".localized }
-
-        /// Base translation: 於 Retina 熒幕上使用物理分辨率
-        public static var UsePhysicalResolutionOnRetinaDisplays : String { return  "PrefUI.UsePhysicalResolutionOnRetinaDisplays".localized }
-
-        /// Base translation: 當前熒幕:
-        public static var OnScreenDisplay : String { return  "PrefUI.OnScreenDisplay".localized }
-
-        /// Base translation: 樣式:
-        public static var Layout : String { return  "PrefUI.Layout".localized }
-
-        /// Base translation: 顯示剩餘時間
-        public static var ShowRemainingTime : String { return  "PrefUI.ShowRemainingTime".localized }
-
-        /// Base translation: 位於底部
-        public static var Bottom : String { return  "PrefUI.Bottom".localized }
-
-        /// Base translation: 縮圖快取:
-        public static var ThumbnailCache : String { return  "PrefUI.ThumbnailCache".localized }
-
-        /// Base translation: 播放時保持置頂
-        public static var AlwaysFloatOnTopWhilePlaying : String { return  "PrefUI.AlwaysFloatOnTopWhilePlaying".localized }
-
-        /// Base translation: 清除快取…
-        public static var ClearCache : String { return  "PrefUI.ClearCache".localized }
-
-        /// Base translation: s
-        public static var S : String { return  "PrefUI.S".localized }
-
-        /// Base translation: 在進度條中顯示章節
-        public static var ShowChapterPositionInProgressBar : String { return  "PrefUI.ShowChapterPositionInProgressBar".localized }
-
-        /// Base translation: 點
-        public static var Pt : String { return  "PrefUI.Pt".localized }
+        /// Base translation: 选择区域
+        public static var SelectRegion : String { return  "FreeSelecting.SelectRegion".localized }
 
     }
 
     public class History {
 
-        /// Base translation: 檔案名
-        public static var Filename : String { return  "History.Filename".localized }
-
-        /// Base translation: 在此搜尋
-        public static var SearchIn : String { return  "History.SearchIn".localized }
-
-        /// Base translation: 在新視窗中播放
-        public static var PlayInNewWindow : String { return  "History.PlayInNewWindow".localized }
-
-        /// Base translation: 完整路徑
-        public static var FullPath : String { return  "History.FullPath".localized }
-
-        /// Base translation: 刪除...
-        public static var Delete : String { return  "History.Delete".localized }
-
-        /// Base translation: 進度
-        public static var Progress : String { return  "History.Progress".localized }
-
-        /// Base translation: 播放
-        public static var Play : String { return  "History.Play".localized }
-
-        /// Base translation: 播放記錄
-        public static var Window : String { return  "History.Window".localized }
-
-        /// Base translation: 檔案
-        public static var File : String { return  "History.File".localized }
-
-        /// Base translation: 清除記錄
-        public static var ClearRecents : String { return  "History.ClearRecents".localized }
-
-        /// Base translation: 無搜尋記錄
-        public static var NoRecentSearches : String { return  "History.NoRecentSearches".localized }
-
-        /// Base translation: 瀏覽方式:
-        public static var GroupBy : String { return  "History.GroupBy".localized }
-
-        /// Base translation: 在 Finder 中打開
+        /// Base translation: 在 Finder 中查看
         public static var RevealInFinder : String { return  "History.RevealInFinder".localized }
+
+        /// Base translation: Item
+        public static var Item : String { return  "History.Item".localized }
+
+        /// Base translation: 全路径
+        public static var FullPath : String { return  "History.FullPath".localized }
 
         /// Base translation: Context Menu
         public static var ContextMenu : String { return  "History.ContextMenu".localized }
 
-        /// Base translation: 檔案夾
-        public static var Folder : String { return  "History.Folder".localized }
+        /// Base translation: 分组:
+        public static var GroupBy : String { return  "History.GroupBy".localized }
+
+        /// Base translation: 文件
+        public static var File : String { return  "History.File".localized }
+
+        /// Base translation: 进度
+        public static var Progress : String { return  "History.Progress".localized }
+
+        /// Base translation: Text Cell
+        public static var TextCell : String { return  "History.TextCell".localized }
+
+        /// Base translation: 播放历史
+        public static var Window : String { return  "History.Window".localized }
+
+        /// Base translation: Table View Cell
+        public static var TableViewCell : String { return  "History.TableViewCell".localized }
+
+        /// Base translation: 清除最近搜索
+        public static var ClearRecents : String { return  "History.ClearRecents".localized }
 
         /// Base translation: 日期
         public static var Date : String { return  "History.Date".localized }
 
-        /// Base translation: 搜尋記錄
+        /// Base translation: 播放
+        public static var Play : String { return  "History.Play".localized }
+
+        /// Base translation: 00:00 AM
+        public static var ZeroZeroZeroZeroAM : String { return  "History.ZeroZeroZeroZeroAM".localized }
+
+        /// Base translation: 在新窗口中播放
+        public static var PlayInNewWindow : String { return  "History.PlayInNewWindow".localized }
+
+        /// Base translation: 删除…
+        public static var Delete : String { return  "History.Delete".localized }
+
+        /// Base translation: 文件夹
+        public static var Folder : String { return  "History.Folder".localized }
+
+        /// Base translation: 无最近搜索
+        public static var NoRecentSearches : String { return  "History.NoRecentSearches".localized }
+
+        /// Base translation: 0:00:00
+        public static var ZeroZeroZeroZeroZero : String { return  "History.ZeroZeroZeroZeroZero".localized }
+
+        /// Base translation: 播放时间
+        public static var PlayedAt : String { return  "History.PlayedAt".localized }
+
+        /// Base translation: 搜索
+        public static var SearchIn : String { return  "History.SearchIn".localized }
+
+        /// Base translation: 最近搜索
         public static var RecentSearches : String { return  "History.RecentSearches".localized }
 
-        /// Base translation: 播放時間
-        public static var PlayedAt : String { return  "History.PlayedAt".localized }
+        /// Base translation: 文件名
+        public static var Filename : String { return  "History.Filename".localized }
+
+    }
+
+    public class PrefUI {
+
+        /// Base translation: 字号:
+        public static var TextSize : String { return  "PrefUI.TextSize".localized }
+
+        /// Base translation: 启用缩略图预览
+        public static var EnableThumbnailPreview : String { return  "PrefUI.EnableThumbnailPreview".localized }
+
+        /// Base translation: 浮动
+        public static var Floating : String { return  "PrefUI.Floating".localized }
+
+        /// Base translation: 计算中…
+        public static var Calculating : String { return  "PrefUI.Calculating".localized }
+
+        /// Base translation: 窗口:
+        public static var Window : String { return  "PrefUI.Window".localized }
+
+        /// Base translation: 播放控制:
+        public static var OnScreenController : String { return  "PrefUI.OnScreenController".localized }
+
+        /// Base translation: 拖动时吸附到窗口中心
+        public static var SnapToCenterWhenDragging : String { return  "PrefUI.SnapToCenterWhenDragging".localized }
+
+        /// Base translation: 缓存占用上限:
+        public static var MaximumCacheSize : String { return  "PrefUI.MaximumCacheSize".localized }
+
+        /// Base translation: 自动隐藏:
+        public static var AutoHideAfter : String { return  "PrefUI.AutoHideAfter".localized }
+
+        /// Base translation: 只有在手动打开文件时调整窗口大小
+        public static var ResizeToVideoSizeOnlyWhenOpeningFilesManually : String { return  "PrefUI.ResizeToVideoSizeOnlyWhenOpeningFilesManually".localized }
+
+        /// Base translation: 顶部
+        public static var Top : String { return  "PrefUI.Top".localized }
+
+        /// Base translation: 在 Retina 屏幕上使用物理分辨率
+        public static var UsePhysicalResolutionOnRetinaDisplays : String { return  "PrefUI.UsePhysicalResolutionOnRetinaDisplays".localized }
+
+        /// Base translation: OSD:
+        public static var OnScreenDisplay : String { return  "PrefUI.OnScreenDisplay".localized }
+
+        /// Base translation: 样式:
+        public static var Layout : String { return  "PrefUI.Layout".localized }
+
+        /// Base translation: 显示剩余时间
+        public static var ShowRemainingTime : String { return  "PrefUI.ShowRemainingTime".localized }
+
+        /// Base translation: 播放音频文件时自动切换到音乐模式
+        public static var SwitchToMusicModeAutomatically : String { return  "PrefUI.SwitchToMusicModeAutomatically".localized }
+
+        /// Base translation: 底部
+        public static var Bottom : String { return  "PrefUI.Bottom".localized }
+
+        /// Base translation: 缩略图预览:
+        public static var ThumbnailPreview : String { return  "PrefUI.ThumbnailPreview".localized }
+
+        /// Base translation: 缩略图缓存:
+        public static var ThumbnailCache : String { return  "PrefUI.ThumbnailCache".localized }
+
+        /// Base translation: 播放时保持置顶
+        public static var AlwaysFloatOnTopWhilePlaying : String { return  "PrefUI.AlwaysFloatOnTopWhilePlaying".localized }
+
+        /// Base translation: 清除缓存…
+        public static var ClearCache : String { return  "PrefUI.ClearCache".localized }
+
+        /// Base translation: s
+        public static var S : String { return  "PrefUI.S".localized }
+
+        /// Base translation: 在进度条中显示章节
+        public static var ShowChapterPositionInProgressBar : String { return  "PrefUI.ShowChapterPositionInProgressBar".localized }
+
+        /// Base translation: pt
+        public static var Pt : String { return  "PrefUI.Pt".localized }
 
     }
 
     public class PrefAdvanced {
 
-        /// Base translation: 啟用進階設定
+        /// Base translation: 启用高级设置
         public static var EnableAdvancedSettings : String { return  "PrefAdvanced.EnableAdvancedSettings".localized }
 
         /// Base translation: Box
         public static var Box : String { return  "PrefAdvanced.Box".localized }
 
-        /// Base translation: 使用配置目錄:
+        /// Base translation: 使用配置目录:
         public static var UseConfigDirectory : String { return  "PrefAdvanced.UseConfigDirectory".localized }
 
-        /// Base translation: 選項
+        /// Base translation: 选项
         public static var Name : String { return  "PrefAdvanced.Name".localized }
 
-        /// Base translation: 打開日誌檔案夾
+        /// Base translation: 打开日志文件夹
         public static var OpenLogDirectory : String { return  "PrefAdvanced.OpenLogDirectory".localized }
 
-        /// Base translation: 記錄日誌
+        /// Base translation: 记录日志
         public static var EnableLogging : String { return  "PrefAdvanced.EnableLogging".localized }
 
         /// Base translation: 使用 MPV 的 OSD
@@ -1972,35 +2112,35 @@ public class I18N {
         /// Base translation: Text Cell
         public static var TextCell : String { return  "PrefAdvanced.TextCell".localized }
 
-        /// Base translation: 以下所有設定需重啟程式方可生效。
+        /// Base translation: 以下所有设置需要重启 Leaf 才会生效。
         public static var TheFollowingSettingsWillRequireRestartingLeafToTakeEffectPoint : String { return  "PrefAdvanced.TheFollowingSettingsWillRequireRestartingLeafToTakeEffectPoint".localized }
 
         /// Base translation: 值
         public static var Value : String { return  "PrefAdvanced.Value".localized }
 
-        /// Base translation: 額外 MPV 選項
+        /// Base translation: 额外 MPV 选项
         public static var AdditionalMPVOptions : String { return  "PrefAdvanced.AdditionalMPVOptions".localized }
 
-        /// Base translation: 選擇目錄…
+        /// Base translation: 选择目录…
         public static var ChooseDirectory : String { return  "PrefAdvanced.ChooseDirectory".localized }
 
     }
 
     public class QuickSetting {
 
-        /// Base translation: 飽和度:
+        /// Base translation: 饱和度:
         public static var Saturation : String { return  "QuickSetting.Saturation".localized }
 
-        /// Base translation: 字體
+        /// Base translation: 字体
         public static var FONT : String { return  "QuickSetting.FONT".localized }
-
-        /// Base translation: 第二字幕:
-        public static var SecondarySubtitle : String { return  "QuickSetting.SecondarySubtitle".localized }
 
         /// Base translation: 4k
         public static var Fourk : String { return  "QuickSetting.Fourk".localized }
 
-        /// Base translation: 旋轉:
+        /// Base translation: 副字幕:
+        public static var SecondarySubtitle : String { return  "QuickSetting.SecondarySubtitle".localized }
+
+        /// Base translation: 旋转:
         public static var Rotation : String { return  "QuickSetting.Rotation".localized }
 
         /// Base translation: 16k
@@ -2009,7 +2149,7 @@ public class I18N {
         /// Base translation: 500
         public static var FiveZeroZero : String { return  "QuickSetting.FiveZeroZero".localized }
 
-        /// Base translation: 長寬比:
+        /// Base translation: 长宽比:
         public static var AspectRatio : String { return  "QuickSetting.AspectRatio".localized }
 
         /// Base translation: 1x
@@ -2018,31 +2158,31 @@ public class I18N {
         /// Base translation: 35
         public static var ThreeFive : String { return  "QuickSetting.ThreeFive".localized }
 
-        /// Base translation: 視頻
+        /// Base translation: 视频
         public static var Video : String { return  "QuickSetting.Video".localized }
 
         /// Base translation: 0s
         public static var Zeros : String { return  "QuickSetting.Zeros".localized }
 
-        /// Base translation: 默認
+        /// Base translation: 默认
         public static var Default : String { return  "QuickSetting.Default".localized }
 
-        /// Base translation: 字幕延遲:
+        /// Base translation: 字幕延迟:
         public static var SubtitleDelay : String { return  "QuickSetting.SubtitleDelay".localized }
 
-        /// Base translation: 音訊延遲:
+        /// Base translation: 音频延迟:
         public static var AudioDelay : String { return  "QuickSetting.AudioDelay".localized }
 
-        /// Base translation: 音訊
+        /// Base translation: 音频
         public static var AUDIO : String { return  "QuickSetting.AUDIO".localized }
 
-        /// Base translation: 裁切:
+        /// Base translation: 剪切:
         public static var Crop : String { return  "QuickSetting.Crop".localized }
 
-        /// Base translation: 字幕樣式可能破壞 ASS 渲染。某些字幕格式無法使用下列部分選項。
+        /// Base translation: 字幕样式可能破坏 ASS 渲染。某些字幕格式无法使用下列部分选项。
         public static var SubStyleOptionsMayBreakASSRenderingAndSomeOfThemWillBeDisabledDependingOnSubtitleTypePoint : String { return  "QuickSetting.SubStyleOptionsMayBreakASSRenderingAndSomeOfThemWillBeDisabledDependingOnSubtitleTypePoint".localized }
 
-        /// Base translation: 邊框
+        /// Base translation: 边框
         public static var BORDER : String { return  "QuickSetting.BORDER".localized }
 
         /// Base translation: 外置字幕:
@@ -2054,7 +2194,7 @@ public class I18N {
         /// Base translation: 字幕
         public static var SUBTITLES : String { return  "QuickSetting.SUBTITLES".localized }
 
-        /// Base translation: 加載音訊檔...
+        /// Base translation: 加载外置音频…
         public static var LoadExternalAudioTrack : String { return  "QuickSetting.LoadExternalAudioTrack".localized }
 
         /// Base translation: -5s
@@ -2069,7 +2209,7 @@ public class I18N {
         /// Base translation: 2.5
         public static var TwoPointFive : String { return  "QuickSetting.TwoPointFive".localized }
 
-        /// Base translation: 縮放:
+        /// Base translation: 缩放:
         public static var Scale : String { return  "QuickSetting.Scale".localized }
 
         /// Base translation: 2k
@@ -2078,19 +2218,19 @@ public class I18N {
         /// Base translation: Text Cell
         public static var TextCell : String { return  "QuickSetting.TextCell".localized }
 
-        /// Base translation: 無
+        /// Base translation: 无
         public static var None : String { return  "QuickSetting.None".localized }
 
         /// Base translation: 70
         public static var SevenZero : String { return  "QuickSetting.SevenZero".localized }
 
-        /// Base translation: 自定...
+        /// Base translation: 自定义…
         public static var Custom : String { return  "QuickSetting.Custom".localized }
 
         /// Base translation: 1.5
         public static var OnePointFive : String { return  "QuickSetting.OnePointFive".localized }
 
-        /// Base translation: 外置音訊:
+        /// Base translation: 外置音频:
         public static var ExternalAudio : String { return  "QuickSetting.ExternalAudio".localized }
 
         /// Base translation: 4
@@ -2099,7 +2239,7 @@ public class I18N {
         /// Base translation: 16:10
         public static var SixteenTen : String { return  "QuickSetting.SixteenTen".localized }
 
-        /// Base translation: 位置:
+        /// Base translation: 位置
         public static var Position : String { return  "QuickSetting.Position".localized }
 
         /// Base translation: 250
@@ -2117,16 +2257,16 @@ public class I18N {
         /// Base translation: 8k
         public static var Eightk : String { return  "QuickSetting.Eightk".localized }
 
-        /// Base translation: 寬度:
+        /// Base translation: 宽度:
         public static var Width : String { return  "QuickSetting.Width".localized }
 
-        /// Base translation: 字體...
+        /// Base translation: 字体…
         public static var Font : String { return  "QuickSetting.Font".localized }
 
-        /// Base translation: 音訊軌道:
+        /// Base translation: 音频轨道:
         public static var AudioTrack : String { return  "QuickSetting.AudioTrack".localized }
 
-        /// Base translation: +12分貝
+        /// Base translation: +12 dB
         public static var PlusOneTwoDB : String { return  "QuickSetting.PlusOneTwoDB".localized }
 
         /// Base translation: 50
@@ -2135,7 +2275,7 @@ public class I18N {
         /// Base translation: 40
         public static var FourZero : String { return  "QuickSetting.FourZero".localized }
 
-        /// Base translation: 視訊
+        /// Base translation: 视频
         public static var VIDEO : String { return  "QuickSetting.VIDEO".localized }
 
         /// Base translation: 均衡器:
@@ -2144,13 +2284,13 @@ public class I18N {
         /// Base translation: 3:2
         public static var ThreeTwo : String { return  "QuickSetting.ThreeTwo".localized }
 
-        /// Base translation: 音訊
+        /// Base translation: 音频
         public static var Audio : String { return  "QuickSetting.Audio".localized }
 
-        /// Base translation: 視訊軌道:
+        /// Base translation: 视频轨道:
         public static var VideoTrack : String { return  "QuickSetting.VideoTrack".localized }
 
-        /// Base translation: 對比度:
+        /// Base translation: 对比度:
         public static var Contrast : String { return  "QuickSetting.Contrast".localized }
 
         /// Base translation: 31.25
@@ -2171,7 +2311,7 @@ public class I18N {
         /// Base translation: 0.25x
         public static var ZeroPointTwoFivex : String { return  "QuickSetting.ZeroPointTwoFivex".localized }
 
-        /// Base translation: 加載字幕…
+        /// Base translation: 加载字幕…
         public static var LoadSubtitle : String { return  "QuickSetting.LoadSubtitle".localized }
 
         /// Base translation: 90°
@@ -2183,10 +2323,10 @@ public class I18N {
         /// Base translation: 3
         public static var Three : String { return  "QuickSetting.Three".localized }
 
-        /// Base translation: 伽瑪:
+        /// Base translation: 反差:
         public static var Gamma : String { return  "QuickSetting.Gamma".localized }
 
-        /// Base translation: 0分貝
+        /// Base translation: 0 dB
         public static var ZeroDB : String { return  "QuickSetting.ZeroDB".localized }
 
         /// Base translation: 5:4
@@ -2204,7 +2344,7 @@ public class I18N {
         /// Base translation: 亮度:
         public static var Brightness : String { return  "QuickSetting.Brightness".localized }
 
-        /// Base translation: 字體大小:
+        /// Base translation: 字号:
         public static var Size : String { return  "QuickSetting.Size".localized }
 
         /// Base translation: 45
@@ -2219,10 +2359,10 @@ public class I18N {
         /// Base translation: 125
         public static var OneTwoFive : String { return  "QuickSetting.OneTwoFive".localized }
 
-        /// Base translation: 在線查找…
+        /// Base translation: 在线查找…
         public static var SearchOnline : String { return  "QuickSetting.SearchOnline".localized }
 
-        /// Base translation: 抗交錯
+        /// Base translation: 反交错
         public static var Deinterlace : String { return  "QuickSetting.Deinterlace".localized }
 
         /// Base translation: 5
@@ -2231,16 +2371,16 @@ public class I18N {
         /// Base translation: 180°
         public static var OneEightZero : String { return  "QuickSetting.OneEightZero".localized }
 
-        /// Base translation: 色調:
+        /// Base translation: 色调:
         public static var Hue : String { return  "QuickSetting.Hue".localized }
 
-        /// Base translation: -12分貝
+        /// Base translation: -12 dB
         public static var OneTwoDB : String { return  "QuickSetting.OneTwoDB".localized }
 
         /// Base translation: 1
         public static var One : String { return  "QuickSetting.One".localized }
 
-        /// Base translation: 文字樣式:
+        /// Base translation: 文字样式:
         public static var TextStyle : String { return  "QuickSetting.TextStyle".localized }
 
         /// Base translation: 1k
@@ -2255,32 +2395,35 @@ public class I18N {
         /// Base translation: 背景
         public static var BACKGROUND : String { return  "QuickSetting.BACKGROUND".localized }
 
-        /// Base translation: 顏色:
+        /// Base translation: 颜色:
         public static var Color : String { return  "QuickSetting.Color".localized }
 
     }
 
     public class Main {
 
-        /// Base translation: 緩衝中... 100%
-        public static var BufferingOneZeroZeroPercent : String { return  "Main.BufferingOneZeroZeroPercent".localized }
+        /// Base translation: Window
+        public static var Window : String { return  "Main.Window".localized }
+
+        /// Base translation: 缓冲中... %d%%
+        public static func BufferingIndicator(value1 : Int) -> String {
+            return String(format: I18N.bundle.localizedString(forKey: "Main.BufferingIndicator", value: nil, table: nil), value1)
+        }
 
         /// Base translation: -32x
         public static var ThreeTwox : String { return  "Main.ThreeTwox".localized }
 
-        /// Base translation: 視窗
-        public static var Window : String { return  "Main.Window".localized }
+        /// Base translation: 缓冲中… 100%
+        public static var BufferingOneZeroZeroPercent : String { return  "Main.BufferingOneZeroZeroPercent".localized }
 
-        /// Base translation: 當前播放
+        /// Base translation: 999:99
+        public static var MinusMinus : String { return  "Main.MinusMinus".localized }
+
+        /// Base translation: On Screen Display
         public static var OnScreenDisplay : String { return  "Main.OnScreenDisplay".localized }
 
         /// Base translation: Label
         public static var Label : String { return  "Main.Label".localized }
-
-        /// Base translation: 緩衝中... %d%%
-        public static func BufferingIndicator(value1 : Int) -> String {
-            return String(format: I18N.bundle.localizedString(forKey: "Main.BufferingIndicator", value: nil, table: nil), value1)
-        }
 
     }
 }

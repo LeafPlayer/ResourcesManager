@@ -174,7 +174,7 @@ end
 run_parser
 
 Swift_generator = "LaurineGenerator.swift"
-input = "#{Output_folder}/zh-Hant.lproj/Localizable.strings"
+input = "#{Output_folder}/zh-Hans.lproj/Localizable.strings"
 output_folder = "#{Parent_folder}/Sources/generated"
 output = "#{output_folder}/I18N.swift"
 FileUtils.mkdir_p output_folder
