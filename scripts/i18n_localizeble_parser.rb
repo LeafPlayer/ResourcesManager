@@ -12,8 +12,9 @@ Current_folder = current_folder
 Resource_folder = "#{Current_folder}/iina_i18n"
 Parent_folder = File.dirname(Current_folder)
 Output_folder = "#{Parent_folder}/Resources.bundle"
-FileUtils.rm_rf Output_folder
-FileUtils.mkdir Output_folder
+Dir["#{Output_folder}/*.lproj"].each do |proj|
+  FileUtils.rm_rf proj
+end
 Localizable_strings_file = "Localizable.strings"
 Language_list = ["zh-Hans", "zh-Hant", "uk", "tr", "ru", "pl", "nl", "ko", "ja", "it", "fr", "es", "de", "en"]
 Map_for_string_file = {"MainMenu.strings"=> "MainMenu", "PrefControlViewController.strings"=> "Pref", "InspectorWindowController.strings"=> "Inspector", "QuickSettingViewController.strings"=> "QuickSetting", "SubSelectWindowController.strings"=> "SubSelect", "HistoryWindowController.strings"=> "History", "FreeSelectingViewController.strings"=> "FreeSelecting", "CropSettingsViewController.strings"=> "CropSettings", "PlaylistViewController.strings"=> "Playlist", "FilterWindowController.strings"=> "Filter", "OpenURLAccessoryViewController.strings"=> "OpenURLAccessory", "AboutWindowController.strings"=> "About", "PrefGeneralViewController.strings"=> "PrefGeneral", "PrefKeyBindingViewController.strings"=> "PrefKeyBinding", "InitialWindowController.strings"=> "Initial", "PrefUIViewController.strings"=> "PrefUI", "PrefNetworkViewController.strings"=> "PrefNetwork", "FontPickerWindowController.strings"=> "FontPicker", "KeyRecordViewController.strings"=> "KeyRecord", "PrefAdvancedViewController.strings"=> "PrefAdvanced", "MainWindowController.strings"=> "Main", "PrefCodecViewController.strings"=> "PrefCodec", "PrefSubViewController.strings"=> "PrefSub", }

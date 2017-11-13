@@ -24,6 +24,8 @@ class ResourcesManagerTests: XCTestCase {
     func testExample() {
         print(ImageResource.mute)
         print(ImageResource.chevronUp)
+        print(I18N.currentLanguage.contributionFilePath)
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

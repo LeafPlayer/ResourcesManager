@@ -8,7 +8,7 @@
 
 import Foundation
 public extension I18N {
-    
+
     public enum Language: String {
         case chineseTraditional = "zh-Hant"
         case chineseSimplified = "zh-Hans"
@@ -23,7 +23,7 @@ public extension I18N {
         case russian = "ru"
         case turkish = "tr"
         case ukrainian = "uk"
-        
+
         //https://stackoverflow.com/questions/3040677/locale-codes-for-iphone-lproj-folders
         public static func formDefaultLocale() -> Language {
             let locale = Locale.current.identifier
@@ -42,9 +42,9 @@ public extension I18N {
             case "zh_CN", "zh", "zh-Hans": return .chineseSimplified
             default: return .english
             }
-            
+
         }
-        
+
         public var displayName: String {
             switch self {
             case .chineseSimplified: return "简体中文"
@@ -62,24 +62,31 @@ public extension I18N {
             case .ukrainian: return "Ukrainian"
             }
         }
-        
+
         public var bundle: Bundle? {
             guard let path = Bundle(for: I18N.self).path(forResource: "Resources.bundle/\(rawValue).lproj", ofType: nil) else { return nil }
             return Bundle(path: path)
         }
+        
+        public var contributionFilePath: String {
+            guard let path = Bundle(for: I18N.self).path(forResource: "Resources.bundle/\(rawValue).lproj", ofType: nil) else {
+                return Bundle(for: I18N.self).path(forResource: "Resources.bundle/en.lproj", ofType: nil)!
+            }
+            return path
+        }
     }
-    
+
     public private(set) static var currentLanguage: Language = .chineseSimplified {
         didSet {
             guard let bundle = currentLanguage.bundle else { return }
             I18N.bundle = bundle
         }
     }
-    
+
     public static func supportedLanguages() -> [Language] {
         return [.chineseSimplified, .chineseTraditional, .spanish, .dutch, .french, .german, .italian, .korean, .polish, .russian, .turkish, .ukrainian]
     }
-    
+
     public static func setToSystemDefaultLangauge() {
         if let preferred = UserDefaults.standard.value(forKey: storeKey()) as? String, let lang = Language(rawValue: preferred) {
             currentLanguage = lang
@@ -87,27 +94,31 @@ public extension I18N {
         }
         currentLanguage = Language.formDefaultLocale()
     }
-    
+
     private static func storeKey() -> String { return "Leaf.User.Language" }
-    
+
     public static func userPreferredLanguage(_ lang: Language) {
         UserDefaults.standard.set(lang.rawValue, forKey: storeKey())
         UserDefaults.standard.synchronize()
         currentLanguage = lang
     }
+
+    public static func contributionFilePath() -> String {
+         return currentLanguage.contributionFilePath
+    }
 }
 
 public final class ImageResource {
     private static var _imagePool: [String : NSImage] = [:]
-    
+
     static var bundle = Bundle(for: ImageResource.self)
-    
+
     static func fileName(name: String) -> URL {
         let prefixed = "Resources.bundle/images/"
         let path = bundle.url(forResource: prefixed + name, withExtension: "pdf")
         return path!
     }
-    
+
     static func image(named: String) -> NSImage {
         if let image = _imagePool[named] { return image }
         let desiredResolution: CGFloat = 72 * 3
@@ -119,7 +130,7 @@ public final class ImageResource {
         //destinationRect is the rectangle that I'll draw to; sourceRect indicates the portion of the imagerep that will be drawn
         let sourceRect = NSMakeRect(0,0,pdfImageRep.size.width,pdfImageRep.size.height)
         let destinationRect = NSMakeRect(0, 0, size.width, size.height)
-        
+
         //idk why but this is needed (I think drawing is not possible without any istance of NSImage)
         let image = NSImage(size: size)
         image.lockFocus()
@@ -131,11 +142,10 @@ public final class ImageResource {
         _imagePool[named] = back
         return back
     }
-    
+
     static func pngImage(named: String) -> NSImage {
         let prefixed = "Resources.bundle/images/"
         if let path = bundle.path(forResource: prefixed + named, ofType: "png"), let image = NSImage(contentsOfFile: path) { return image }
         return NSImage()
     }
 }
-

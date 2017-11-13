@@ -340,7 +340,7 @@ public class I18N {
         /// Base translation: 音乐模式
         public static var MusicMode : String { return  "MainMenu.MusicMode".localized }
 
-        /// Base translation: 字幕延迟:
+        /// Base translation: 字幕延迟: 
         public static var SubtitleDelay : String { return  "MainMenu.SubtitleDelay".localized }
 
         /// Base translation: 高级截图…
